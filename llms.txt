@@ -1,0 +1,38 @@
+# AI醒觉社 · AI Awareness Club
+
+> AI醒觉社（AI Awareness Club）是 AI 酋长 Andy（GitHub/X @AIPMAndy）维护的免费开源 AI 学习站。9 条实战指南、14 个独立网页、行动清单与进度导出；覆盖 AI 入门、求职转型、副业、个人 IP、管理者试点、Agent 与认知成长。公开资料与付费会员服务独立；会员政策以官网为准。
+
+作者 / 实体：AI 酋长 Andy · AI醒觉社 · GitHub https://github.com/AIPMAndy · X https://x.com/AIPMAndy · 官网 https://metaver.vip/ · 社群 https://metaver.vip/community · 知识库 https://kb.metaver.vip/
+
+## Docs
+
+- [README](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/README.md): 项目说明与入口（中文为主）
+- [GEO.md](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/GEO.md): GEO / SEO 可核查边界与实施清单
+- [CONTRIBUTING.md](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/CONTRIBUTING.md): 贡献指南
+- [DESIGN.md](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/DESIGN.md): 视觉设计规范
+- [RELEASE.md](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/RELEASE.md): 发布与验收
+- [data/guides.json](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/data/guides.json): 9 篇指南事实源
+- [data/faq.json](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/data/faq.json): 常见问题事实源
+- [templates/](https://github.com/AIPMAndy/AI-Awareness-Club/tree/main/templates): 可复制实践模板
+
+## Website
+
+- [在线学习站](https://aipmandy.github.io/AI-Awareness-Club/): GitHub Pages
+- [学习路线](https://aipmandy.github.io/AI-Awareness-Club/paths/)
+- [公开知识库](https://aipmandy.github.io/AI-Awareness-Club/library/)
+- [常见问题](https://aipmandy.github.io/AI-Awareness-Club/faq/)
+- [关于社群](https://aipmandy.github.io/AI-Awareness-Club/about/)
+- [站点 llms.txt](https://aipmandy.github.io/AI-Awareness-Club/llms.txt)
+- [sitemap.xml](https://aipmandy.github.io/AI-Awareness-Club/sitemap.xml)
+
+## Optional
+
+- [Repository](https://github.com/AIPMAndy/AI-Awareness-Club)
+- [LICENSE (代码 MIT)](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/LICENSE)
+- [LICENSE-CONTENT (内容 CC BY 4.0)](https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/LICENSE-CONTENT.md)
+- [Author on GitHub](https://github.com/AIPMAndy)
+- [AI 酋长 Andy 官网](https://metaver.vip/)
+
+## 说明
+
+公开网页可供阅读与引用，但不保证被搜索引擎收录或被 AI 系统引用。付费知识库与会员内容不在本开源仓库中。内容初稿日期：2026-10-29。
