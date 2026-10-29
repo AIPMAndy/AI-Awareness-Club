@@ -1,1 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-label="AI Awareness Club · 让 AI 成为利人利己的力量"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12271c"/><stop offset="1" stop-color="#285641"/></linearGradient><radialGradient id="rg"><stop stop-color="#7aa68f" stop-opacity=".2"/><stop offset="1" stop-color="#7aa68f" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="460" rx="18" fill="url(#g)"/><circle cx="960" cy="230" r="280" fill="url(#rg)"/><g fill="none" stroke="#b5d6bb"><circle cx="990" cy="215" r="170" stroke-opacity=".33"/><circle cx="990" cy="215" r="240" stroke-opacity=".14"/><circle cx="990" cy="215" r="115" stroke-opacity=".22"/></g><circle cx="1124" cy="117" r="8" fill="#c7e8bb"/><g font-family="Arial,'Noto Sans CJK SC',sans-serif"><text x="70" y="94" font-size="18" fill="#c7e2c9" letter-spacing="5">AI AWARENESS CLUB</text><text x="70" y="216" font-size="70" font-weight="700" fill="#f5f8ed">AI 醒觉社</text><text x="70" y="291" font-size="45" font-weight="600" fill="#c4e1ca">让 AI 成为利人利己的力量。</text><text x="70" y="396" font-size="15" fill="#a7c4b1" letter-spacing="2">OPEN KNOWLEDGE / REAL PRACTICE / CREATE TOGETHER</text></g><path d="M1094 212c-62-92-112 115-185-14" fill="none" stroke="#d5ebc0" stroke-opacity=".68" stroke-width="2.3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="AI醒觉社 AI Awareness Club: 让 AI 成为利人利己的力量。">
+<defs>
+  <radialGradient id="orb" cx="32%" cy="23%" r="78%"><stop stop-color="#fff"/><stop offset=".21" stop-color="#dfecff"/><stop offset=".44" stop-color="#a7b9ff"/><stop offset=".69" stop-color="#6569e3"/><stop offset="1" stop-color="#1a2567"/></radialGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e6f7ff" stop-opacity=".36"/><stop offset=".45" stop-color="#96aff1" stop-opacity=".65"/><stop offset=".67" stop-color="#fff"/><stop offset="1" stop-color="#b8c6ee" stop-opacity=".7"/></linearGradient>
+  <linearGradient id="type" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1967d2"/><stop offset=".5" stop-color="#754fdd"/><stop offset="1" stop-color="#d557a2"/></linearGradient>
+  <filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1200" height="480" rx="24" fill="#f5f5f7"/>
+<rect width="1200" height="480" rx="24" fill="#fff" opacity=".44"/>
+<circle cx="995" cy="225" r="240" fill="#d3dfff" opacity=".37" filter="url(#shadow)"/>
+<ellipse cx="951" cy="259" rx="229" ry="94" transform="rotate(-27 951 259)" fill="none" stroke="url(#ring)" stroke-width="38" opacity=".7"/>
+<circle cx="946" cy="237" r="140" fill="url(#orb)"/>
+<ellipse cx="951" cy="259" rx="229" ry="94" transform="rotate(-27 951 259)" fill="none" stroke="url(#ring)" stroke-width="18"/>
+<ellipse cx="951" cy="259" rx="229" ry="94" transform="rotate(-27 951 259)" fill="none" stroke="#fff" stroke-width="3" opacity=".92"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',Arial,sans-serif">
+  <text x="76" y="91" font-size="18" font-weight="600" letter-spacing="4" fill="#6e6e73">AI AWARENESS CLUB</text>
+  <text x="69" y="226" font-size="82" font-weight="750" letter-spacing="-3" fill="#1d1d1f">AI 醒觉社。</text>
+  <text x="76" y="297" font-size="35" font-weight="650" fill="#1d1d1f">让 AI 成为<tspan fill="url(#type)">利人利己</tspan>的力量。</text>
+  <text x="76" y="410" font-size="16" fill="#6e6e73">开放学习   ·   真实实践   ·   价值共创</text>
+</g>
+</svg>

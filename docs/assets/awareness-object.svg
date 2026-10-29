@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 550" role="img" aria-labelledby="title desc">
+  <title id="title">AI Awareness Club · The Moment of Awakening</title>
+  <desc id="desc">原创抽象光学雕塑：透明玻璃环绕一颗柔和的蓝紫色光球，象征学习、觉察与共创。</desc>
+  <defs>
+    <radialGradient id="aura"><stop offset="0" stop-color="#C0B8FF" stop-opacity=".56"/><stop offset=".40" stop-color="#A8CCFF" stop-opacity=".38"/><stop offset=".67" stop-color="#D4E8FF" stop-opacity=".21"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="sphere" cx="33%" cy="27%" r="78%"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#ecf8ff"/><stop offset=".36" stop-color="#b7d4ff"/><stop offset=".56" stop-color="#9c9bff"/><stop offset=".73" stop-color="#5968cf"/><stop offset=".88" stop-color="#242a74"/><stop offset="1" stop-color="#111833"/></radialGradient>
+    <linearGradient id="rim" x1=".07" y1=".05" x2=".93" y2=".89" gradientUnits="objectBoundingBox"><stop stop-color="#fff"/><stop offset=".18" stop-color="#d3edff"/><stop offset=".37" stop-color="#879ecb"/><stop offset=".56" stop-color="#fafaff"/><stop offset=".74" stop-color="#8b8dba"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <linearGradient id="ring" x1="100" y1="100" x2="930" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#d8f6ff" stop-opacity=".02"/><stop offset=".2" stop-color="#fff" stop-opacity=".82"/><stop offset=".44" stop-color="#cad8ff" stop-opacity=".56"/><stop offset=".6" stop-color="#fff" stop-opacity=".98"/><stop offset=".84" stop-color="#909ed9" stop-opacity=".53"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="#bddaff" stop-opacity=".42"/><stop offset=".62" stop-color="#6274d4" stop-opacity=".17"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
+    <filter id="blur" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="15"/></filter>
+    <filter id="glassShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#667dba" flood-opacity=".15"/></filter>
+    <clipPath id="ball"><circle cx="579" cy="244" r="159"/></clipPath>
+  </defs>
+  <ellipse cx="580" cy="505" rx="248" ry="20" fill="#29375a" opacity=".11" filter="url(#shadow)"/>
+  <ellipse cx="578" cy="274" rx="368" ry="270" fill="url(#aura)" filter="url(#blur)" opacity=".85"/>
+  <!-- The transparent orbital sculpture, intentionally original, not a third-party device or logo. -->
+  <g fill="none" filter="url(#glassShadow)">
+    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="url(#rim)" stroke-width="44" opacity=".38"/>
+    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="url(#ring)" stroke-width="25" opacity=".92"/>
+    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="#fff" stroke-width="4" opacity=".85"/>
+  </g>
+  <circle cx="579" cy="244" r="165" fill="#b3cbff" opacity=".13" filter="url(#blur)"/>
+  <circle cx="579" cy="244" r="159" fill="url(#sphere)"/>
+  <g clip-path="url(#ball)">
+    <ellipse cx="501" cy="127" rx="118" ry="54" transform="rotate(-27 501 127)" fill="#fff" opacity=".38" filter="url(#blur)"/>
+    <ellipse cx="670" cy="335" rx="125" ry="91" fill="#0e1e55" opacity=".28" filter="url(#blur)"/>
+    <path d="M383 233 C445 201 476 205 517 214 C604 233 642 183 727 203" stroke="#fff" opacity=".24" stroke-width="38" fill="none" filter="url(#blur)"/>
+    <path d="M450 345 C510 305 603 312 665 349" stroke="#e9ebff" opacity=".18" stroke-width="24" fill="none" filter="url(#blur)"/>
+  </g>
+  <circle cx="579" cy="244" r="159" stroke="url(#light)" stroke-width="2.5" fill="none"/>
+  <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="600 1800" stroke-dashoffset="250" opacity=".85"/>
+  <circle cx="883" cy="161" r="6" fill="#f7faff" opacity=".95"/>
+  <circle cx="883" cy="161" r="13" stroke="#fff" opacity=".45" fill="none"/>
+</svg>

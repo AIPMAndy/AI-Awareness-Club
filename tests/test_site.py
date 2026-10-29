@@ -110,6 +110,22 @@ class ContentChecks(unittest.TestCase):
             self.assertIn('AI Awareness Club',text)
             self.assertIn('AI醒觉社',text)
         self.assertNotIn('AI Awake Group','\n'.join(texts))
+    def test_apple_inspired_design_is_original_and_present(self):
+        source=(ROOT/'site/assets/apple.css').read_text(encoding='utf-8')
+        built=(DOCS/'assets/apple.css').read_text(encoding='utf-8')
+        self.assertEqual(source,built)
+        self.assertIn('#0071e3',source.lower())
+        self.assertIn('prefers-reduced-motion',source)
+        self.assertEqual((ROOT/'site/assets/awareness-object.svg').read_bytes(),
+                         (DOCS/'assets/awareness-object.svg').read_bytes())
+        homepage=(DOCS/'index.html').read_text(encoding='utf-8')
+        self.assertIn('apple.css',homepage)
+        self.assertIn('awareness-object.svg',homepage)
+        self.assertIn('让 AI 成为',homepage)
+        self.assertIn('开始探索',homepage)
+        self.assertIn('了解醒觉社',homepage)
+        self.assertNotIn('apple.com',homepage.lower())
+
     def test_all_guides_accessible_from_library(self):
         library=(DOCS/'library/index.html').read_text(encoding='utf-8')
         for g in self.guides:

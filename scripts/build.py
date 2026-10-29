@@ -40,7 +40,7 @@ def meta(title, description, route='', kind='website', jsonld=None):
     return f'''<!doctype html>
 <html lang="zh-CN" data-theme="light"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8f7f4"><meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f5f5f7"><meta name="color-scheme" content="light dark">
 <title>{e(title)}</title><meta name="description" content="{e(description)}">
 <meta name="author" content="AI醒觉社 · AI Awareness Club"><meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="{e(canonical)}"><link rel="icon" type="image/svg+xml" href="{e(url('assets/icon.svg'))}">
@@ -50,6 +50,7 @@ def meta(title, description, route='', kind='website', jsonld=None):
 <meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(description)}">
 <link rel="stylesheet" href="{e(url('assets/style.css'))}">
+<link rel="stylesheet" href="{e(url('assets/apple.css'))}">
 {schemas}
 </head><body><a class="skip" href="#main">跳到主要内容</a>
 <header class="site-header"><div class="header-inner"><a href="{e(url())}" class="logo" aria-label="AI醒觉社首页"><span class="logo-mark" aria-hidden="true">◌</span><span>AI<span class="brand-highlight">醒觉社</span><small>AI AWARENESS CLUB</small></span></a>
@@ -89,7 +90,20 @@ def home():
     brand=org_schema()
     website={"@context":"https://schema.org","@type":"WebSite","name":SITE_NAME,"url":url(),"inLanguage":"zh-CN","publisher":{"@id":brand['@id']}}
     data=meta('AI醒觉社（AI Awareness Club）｜让 AI 成为利人利己的力量','AI醒觉社公开学习站：AI 入门、职业转型、AI 副业、个人 IP、管理者 AI、MBTI 成长。免费开源教程、路径与实际交付模板。','',jsonld=[brand,website])
-    data+='''<main id="main"><section class="hero"><div class="hero-glow" aria-hidden="true"></div><div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-dot"></div><div class="orbit-center">A<span>∞</span></div></div><div class="container hero-content"><div class="hero-kicker"><span class="status-dot"></span> THE OPEN KNOWLEDGE PROJECT <span class="kicker-number">001—∞</span></div><h1>让 AI 成为<br><em>利人利己</em>的力量<span class="fullstop">。</span></h1><p class="hero-en">AWARENESS IS ONLY THE BEGINNING.</p><p class="hero-description">这里是 <strong>AI醒觉社 · AI Awareness Club</strong> 的开源学习入口。<br>从一份真实任务开始，建立 AI 能力、清晰判断与长期共创关系。</p><div class="hero-buttons"><a class="button button-light" href="''' + url('paths/')+'''">选择我的学习路线 <span aria-hidden="true">↗</span></a><a class="button button-outline" href="''' +url('library/')+'''">浏览公开知识 <span aria-hidden="true">↗</span></a></div><div class="hero-footnote"><span><b>OPEN</b> 免费公开</span><span><b>REAL</b> 真实问题</span><span><b>BUILD</b> 可检验成果</span></div></div><div class="hero-corner" aria-hidden="true">AWAKE<br>TOGETHER / 2026</div></section>'''
+    data += f'''<main id="main"><section class="hero apple-hero">
+    <div class="hero-content container">
+      <div class="hero-kicker"><span class="status-dot"></span> THE OPEN KNOWLEDGE PROJECT <span class="kicker-number">EST. 2026</span></div>
+      <h1>AI 醒觉社<span class="fullstop">。</span></h1>
+      <p class="hero-statement">让 AI 成为<span>利人利己</span>的力量。</p>
+      <p class="hero-description">从掌握 AI，到认识自己，再到一起创造。<br>一个属于行动者的开放学习共同体。</p>
+      <div class="hero-buttons">
+        <a class="button button-light" href="{url('paths/')}">开始探索 <span aria-hidden="true">↗</span></a>
+        <a class="button button-outline" href="{url('about/')}">了解醒觉社 <span aria-hidden="true">›</span></a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><img src="{url('assets/awareness-object.svg')}" width="1160" height="550" alt="" fetchpriority="high"></div>
+    <div class="hero-bottom"><span>Awareness is only the beginning.</span><span>OPEN · REAL · BUILD</span></div>
+    </section>'''
     data+='''<section class="section ethos container"><div class="big-number">01 / WHY WE EXIST</div><div class="ethos-layout"><p class="section-lead">学习工具很容易。<br>把能力变成真实的改变，<br><em>才值得长期投入。</em></p><div class="ethos-right"><p>我们相信学习应该落到具体行动：解决一个问题，留下可以验证的结果；在认识自己和世界的过程中，找到值得一起做事的人。</p><a class="subtle-link" href="'''+url('about/')+'''">了解 AI 醒觉社的理念 <span aria-hidden="true">↗</span></a></div></div></section>'''
     data+='''<section class="section pillars"><div class="container">'''+sections_heading('02 / THE METHOD','三层成长体系。','术是能力，道是判断，圈是关系。任何一层都不能替代另外两层。')+'''<div class="pillar-grid"><article class="pillar"><span class="pillar-index">01 / SKILL</span><div class="pillar-glyph">↗</div><h3>术 <small>TOOLS & PRACTICE</small></h3><p>AI 工具、工作流、求职项目、内容创造。少囤知识，多做作品。</p><span class="pillar-result">验收：可重复的成果</span></article><article class="pillar"><span class="pillar-index">02 / THINKING</span><div class="pillar-glyph">◎</div><h3>道 <small>CLARITY & GROWTH</small></h3><p>自我认知、价值判断、长期目标。用事实和复盘修正自己的假设。</p><span class="pillar-result">验收：更清楚的选择</span></article><article class="pillar"><span class="pillar-index">03 / COMMUNITY</span><div class="pillar-glyph">∞</div><h3>圈 <small>CREATE TOGETHER</small></h3><p>深度交流、资源互助、项目共创。先提供价值，再寻找长期协作。</p><span class="pillar-result">验收：有边界的协作</span></article></div></div></section>'''
     data+='''<section class="section pathway container"><div class="pathway-left"><div class="eyebrow">03 / YOUR NEXT STEP</div><h2>你现在，<br>最想解决<br>什么问题？</h2><p>先选择一个方向。每条路径都有步骤、交付物和常见错误。没有无效的“大而全”。</p></div><div class="pathway-right"><div class="path-choices" role="group" aria-label="选择学习目标"><button class="path-choice is-active" type="button" data-path="starter" aria-pressed="true"><span>01</span> 从零学 AI <span aria-hidden="true">↗</span></button><button class="path-choice" type="button" data-path="career" aria-pressed="false"><span>02</span> 求职与 AI 转型 <span aria-hidden="true">↗</span></button><button class="path-choice" type="button" data-path="business" aria-pressed="false"><span>03</span> 副业与个人 IP <span aria-hidden="true">↗</span></button><button class="path-choice" type="button" data-path="leader" aria-pressed="false"><span>04</span> 管理者 AI 落地 <span aria-hidden="true">↗</span></button></div><div class="path-result" role="status" aria-live="polite"><span>RECOMMENDED START</span><h3 id="path-title">七天完成第一份 AI 作品</h3><p id="path-description">从一个你真实需要解决的任务开始，留下七份成果。</p><a id="path-link" href="'''+url('guides/ai-first-week/')+'''">打开第一步 <span aria-hidden="true">↗</span></a></div></div></section>'''

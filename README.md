@@ -13,7 +13,7 @@
 [![Build: No dependencies](https://img.shields.io/badge/%E6%9E%84%E5%BB%BA-Python_%E6%A0%87%E5%87%86%E5%BA%93-567b63)](scripts/build.py)
 [![Privacy: No analytics](https://img.shields.io/badge/%E9%9A%90%E7%A7%81-%E6%97%A0%E8%BF%BD%E8%B8%AA-3a6d6a)](SECURITY.md)
 
-**[🌿 打开在线学习站](https://aipmandy.github.io/AI-Awareness-Club/)** · **[从学习路线开始](https://aipmandy.github.io/AI-Awareness-Club/paths/)** · [全部公开指南](docs/library/index.html) · [视觉预览](audit/home-desktop.jpg) · [关于醒觉社](https://metaver.vip/community) · [Andy 官网](https://metaver.vip/)
+**[🌿 打开在线学习站](https://aipmandy.github.io/AI-Awareness-Club/)** · **[从学习路线开始](https://aipmandy.github.io/AI-Awareness-Club/paths/)** · [全部公开指南](docs/library/index.html) · [桌面首屏](audit/apple-desktop-firstfold.jpg) · [手机首屏](audit/apple-mobile-firstfold.jpg) · [视觉设计规范](DESIGN.md) · [设计验收](audit/APPLE_STYLE_QA.md) · [关于醒觉社](https://metaver.vip/community) · [Andy 官网](https://metaver.vip/)
 
 <sub>在线地址需在 GitHub Pages 部署完成后生效。当前仓库代码可直接本地预览。</sub>
 </div>
@@ -89,7 +89,7 @@ AI-Awareness-Club/
 │   ├── guides.json
 │   └── faq.json
 ├── scripts/build.py                  Python 标准库静态站生成器
-├── site/assets/                     原创视觉、JS 与 CSS
+├── site/assets/                     原创光学雕塑、品牌视觉、JS 与 CSS
 ├── docs/                            可直接部署的完整 GitHub Pages 站点
 │   ├── index.html
 │   ├── guides/<slug>/index.html     各指南独立页面
