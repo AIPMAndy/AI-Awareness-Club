@@ -209,6 +209,13 @@ def build():
     lines += [f'- [{g["title"]}]({url(link_to_guide(g))})：{g["description"]}' for g in GUIDES]
     lines+=['','## 说明','公开网页内容可供阅读与引用，但不保证被搜索引擎收录或被 AI 系统引用。','付费知识库与会员内容不包含在本开源仓库中。','内容初稿日期：2026-10-29；会员政策请实时查询官方页面。']
     (OUT/'llms.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    # Search Console / Bing ownership verification files (must survive docs/ wipe).
+    verify_dir = ROOT / 'site' / 'verify'
+    for name in ('google957f1d068fbea032.html', 'BingSiteAuth.xml'):
+        src = verify_dir / name
+        if not src.is_file():
+            raise FileNotFoundError(f'missing verification file: {src}')
+        shutil.copy2(src, OUT / name)
     print('Generated',len(pages),'pages and assets in',OUT)
 
 if __name__=='__main__':build()
