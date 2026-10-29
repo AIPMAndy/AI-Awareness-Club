@@ -41,5 +41,7 @@ jobs:
             echo "Checking ${base}${path}"
             curl --fail --location --silent --show-error --retry 12 --retry-all-errors --retry-delay 5 --max-time 20 "${base}${path}" -o /tmp/ai-awareness-page
             test -s /tmp/ai-awareness-page
+            if [[ -z "${path}" ]]; then
+              grep -q 'AI Awareness Club' /tmp/ai-awareness-page
+            fi
           done
-          curl --fail --location --silent --show-error "${base}" | grep -q 'AI Awareness Club'
