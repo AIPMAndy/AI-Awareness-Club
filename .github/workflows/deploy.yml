@@ -31,3 +31,15 @@ jobs:
           path: docs
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public site after deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${{ steps.deployment.outputs.page_url }}"
+          base="${base%/}/"
+          for path in "" "library/" "guides/ai-first-week/" "sitemap.xml" "llms.txt"; do
+            echo "Checking ${base}${path}"
+            curl --fail --location --silent --show-error --retry 12 --retry-all-errors --retry-delay 5 --max-time 20 "${base}${path}" -o /tmp/ai-awareness-page
+            test -s /tmp/ai-awareness-page
+          done
+          curl --fail --location --silent --show-error "${base}" | grep -q 'AI Awareness Club'
