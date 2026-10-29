@@ -96,4 +96,18 @@
       setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
     });
   }
+  // Explicit user-triggered copy only; no collection or transmission.
+  $('[data-copy-wechat]').forEach(button => button.addEventListener('click', async () => {
+    const wechat = button.dataset.copyWechat || 'AIPMAndy';
+    const label = button.dataset.originalLabel || button.textContent.trim();
+    button.dataset.originalLabel = label;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard not available');
+      await navigator.clipboard.writeText(wechat);
+      button.textContent = '已复制微信号 ✓';
+    } catch {
+      button.textContent = '请手动复制：' + wechat;
+    }
+    window.setTimeout(() => { button.textContent = label; }, 3500);
+  });
 })();
