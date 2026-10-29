@@ -1,0 +1,32 @@
+# AI醒觉社 · AI Awareness Club
+
+> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。
+
+## 官方品牌
+- 官方网站：https://metaver.vip/
+- 社群页面：https://metaver.vip/community
+- 公开知识库入口：https://kb.metaver.vip/
+- GitHub：https://github.com/AIPMAndy/AI-Awareness-Club
+
+## 站点主要页面
+- 首页：https://aipmandy.github.io/AI-Awareness-Club/
+- 学习路线：https://aipmandy.github.io/AI-Awareness-Club/paths/
+- 公开知识：https://aipmandy.github.io/AI-Awareness-Club/library/
+- 品牌与边界：https://aipmandy.github.io/AI-Awareness-Club/about/
+- 常见问题：https://aipmandy.github.io/AI-Awareness-Club/faq/
+
+## 公开指南
+- [普通人学 AI：从第一天到第七天](https://aipmandy.github.io/AI-Awareness-Club/guides/ai-first-week/)：不靠囤课。把自己的真实工作变成测试材料，学会提问、核查、交付和复盘。
+- [AI 时代求职与转型：五步拿出岗位证据](https://aipmandy.github.io/AI-Awareness-Club/guides/career-transition/)：用岗位研究、项目证据、能力补缺、定向投递与面试迭代建立求职系统。
+- [职场人 AI 副业：找到第一个真实付费需求](https://aipmandy.github.io/AI-Awareness-Club/guides/first-customer/)：通过十次访谈、一页服务说明、一次小规模交付和复盘验证最小服务。
+- [个人 AI + IP：从一条真实案例开始](https://aipmandy.github.io/AI-Awareness-Club/guides/personal-ip/)：用一条亲自测试的 AI 项目完成选题、实测、发布、复盘的最小闭环。
+- [管理者 AI 转型：五步找到真正值得做的项目](https://aipmandy.github.io/AI-Awareness-Club/guides/executive-ai/)：帮助企业管理者筛选高价值流程、设计小试点、建立质量与 ROI 验收。
+- [把 AI Agent 做成可交付工作流](https://aipmandy.github.io/AI-Awareness-Club/guides/agent-workflow/)：从任务边界到权限、核验、日志和人工兜底，制作一个可靠的小型 Agent 流程。
+- [MBTI 与成长：如何把自我观察变成行动](https://aipmandy.github.io/AI-Awareness-Club/guides/mbti-reflection/)：通过行为记录、反例搜索和小实验，制定个人职业与沟通改进计划，并明确 MBTI 的适用边界。
+- [AI 醒觉社三层方法：术、道、圈](https://aipmandy.github.io/AI-Awareness-Club/guides/community-method/)：理解 AI 醒觉社的开源学习入口、官方知识库以及申请制共创社群的区别。
+- [让有价值的知识被搜索和 AI 发现](https://aipmandy.github.io/AI-Awareness-Club/guides/public-knowledge-geo/)：一份适用于个人品牌和开源知识项目的可信发布清单，从原始内容到独立页面、可抓取索引和引用证据。
+
+## 说明
+公开网页内容可供阅读与引用，但不保证被搜索引擎收录或被 AI 系统引用。
+付费知识库与会员内容不包含在本开源仓库中。
+内容初稿日期：2026-10-29；会员政策请实时查询官方页面。

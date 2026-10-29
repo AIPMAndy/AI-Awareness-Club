@@ -1,0 +1,23 @@
+name: Check content and website
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild static site
+        run: python scripts/build.py
+      - name: Unit and content tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify committed output is reproducible
+        run: git diff --exit-code -- docs

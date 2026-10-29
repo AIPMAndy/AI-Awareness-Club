@@ -1,0 +1,32 @@
+name: 内容建议或错误修正
+description: 提交可验证的公开知识建议，禁止包含个人隐私或付费知识库材料
+labels: [documentation]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决什么真实问题？
+      description: 描述读者遇到的具体情况，不提供个人联系方式
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 依据、操作步骤与来源
+      description: 请提供可公开的原始来源、复现方法或匿名证据
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: 完成后能得到什么？
+      description: 交付物与失败边界是什么
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: 隐私和权利确认
+      options:
+        - label: 我没有提交私人信息、内部聊天、收费资料或未经授权的作品
+          required: true
