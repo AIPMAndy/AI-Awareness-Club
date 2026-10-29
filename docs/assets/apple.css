@@ -380,3 +380,52 @@ html[data-theme="dark"] .footer-bottom{border-color:#343439}
 @media(prefers-reduced-motion:reduce){.apple-hero .hero-art img{animation:none}}
 .apple-hero .hero-bottom{color:#75757b}
 .card-bottom{color:#6e6e73}
+
+/* Andy contact identity — minimal, deliberate and readable on all screens. */
+.hero-contact{display:flex;justify-content:center;align-items:center;gap:17px;flex-wrap:wrap;margin:17px auto 0;font-size:12px;color:#6e6e73}
+.hero-contact button,.hero-contact a{color:#1d1d1f;background:transparent;border:0;text-decoration:none;font:inherit;font-weight:550;cursor:pointer}
+.hero-contact button{padding:6px 10px;background:#f4f4f7;border-radius:100px}
+.hero-contact button:hover,.hero-contact button:focus-visible{background:#e7f0fc;color:#0071e3}
+.hero-contact a:hover{color:#0071e3}
+.contact-section{padding:88px 0 120px}
+.contact-section-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;background:#f5f5f7;border-radius:30px;padding:clamp(28px,5vw,76px)}
+.contact-copy h2{font-size:clamp(36px,4vw,60px);line-height:1.19;letter-spacing:-.055em;color:#1d1d1f;margin:15px 0 24px}
+.contact-copy>p{font-size:15px;color:#6e6e73;max-width:460px;line-height:1.9}
+.contact-card{background:#fff;border:1px solid #e7e7ec;border-radius:24px;padding:34px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;box-shadow:0 14px 40px rgba(0,0,0,.035)}
+.contact-eyebrow{display:block;font-size:10px;color:#88888e;letter-spacing:.11em;font-weight:650}
+.contact-card-label{font-size:13px;color:#66676d;margin-top:16px}
+.contact-card strong{font-size:clamp(27px,3vw,38px);letter-spacing:-.035em;color:#1d1d1f}
+.copy-wechat{appearance:none;border:0;border-radius:999px;background:#0071e3;color:white;font-size:13px;font-weight:600;cursor:pointer;padding:11px 18px;min-height:42px;transition:background .2s ease}
+.copy-wechat:hover,.copy-wechat:focus-visible{background:#0062ca}
+.contact-card>a{font-size:13px;font-weight:600;color:#0071e3;text-decoration:none;margin-top:6px}
+.contact-card small{display:block;font-size:11px;color:#86868b;line-height:1.7;margin-top:12px}
+.footer-contact{max-width:1120px;width:calc(100% - 64px);margin:0 auto 30px;padding:22px 26px;border:1px solid #dedee3;background:#fff;border-radius:17px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.footer-contact>div>p{margin:7px 0 0;font-size:13px;color:#52525a}
+.footer-contact-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.wechat-identity{font-size:13px;color:#6e6e73}
+.wechat-identity strong{color:#1d1d1f;font-size:15px;letter-spacing:.01em}
+.footer-contact .copy-wechat{padding:8px 14px;min-height:34px;font-size:12px}
+.contact-website{color:#0071e3;text-decoration:none;font-size:12px;font-weight:650;white-space:nowrap}
+.about-wechat{display:flex;align-items:flex-start;flex-direction:column;gap:9px;border-top:1px solid #e5e5ea;margin-top:16px;padding:19px 0}
+.about-wechat span{font-size:12px;color:#6e6e73}
+.about-wechat strong{font-size:23px;color:#1d1d1f}
+.about-wechat button{font-size:12px;min-height:36px;padding:8px 14px}
+html[data-theme="dark"] .footer-contact{background:#242428;border-color:#3a3a40}
+html[data-theme="dark"] .footer-contact>div>p,html[data-theme="dark"] .wechat-identity{color:#ccc}
+html[data-theme="dark"] .footer-contact .wechat-identity strong{color:#fff}
+@media(max-width:790px){
+ .contact-section-inner{grid-template-columns:1fr;gap:26px}
+ .footer-contact{flex-direction:column;align-items:flex-start}
+ .footer-contact-actions{gap:12px}
+}
+@media(max-width:560px){
+ .hero-contact{gap:8px;font-size:11px;margin-top:14px}
+ .hero-contact button{padding:5px 8px}
+ .contact-section{padding:40px 0 85px}
+ .contact-section-inner{padding:26px 20px;border-radius:22px}
+ .contact-copy h2{font-size:38px}
+ .contact-copy p{font-size:13px}
+ .contact-card{padding:24px}
+ .footer-contact{width:calc(100% - 36px);padding:18px;margin-bottom:26px}
+ .footer-contact-actions{align-items:flex-start}
+}
