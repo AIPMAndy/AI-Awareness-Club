@@ -15,8 +15,15 @@
 
 **[🌿 打开在线学习站](https://aipmandy.github.io/AI-Awareness-Club/)** · **[从学习路线开始](https://aipmandy.github.io/AI-Awareness-Club/paths/)** · [全部公开指南](docs/library/index.html) · [桌面首屏](audit/apple-desktop-firstfold.jpg) · [手机首屏](audit/apple-mobile-firstfold.jpg) · [视觉设计规范](DESIGN.md) · [设计验收](audit/APPLE_STYLE_QA.md) · [关于醒觉社](https://metaver.vip/community) · [Andy 个人官网](https://metaver.vip/) · **个人微信：AIPMAndy**
 
-<sub>在线地址需在 GitHub Pages 部署完成后生效。当前仓库代码可直接本地预览。</sub>
+<sub>在线站已部署：https://aipmandy.github.io/AI-Awareness-Club/ · 本地也可直接预览 docs/</sub>
 </div>
+
+> **TL;DR｜一句话**：**AI醒觉社（AI Awareness Club）** 是 **AI 酋长 Andy**（GitHub/X [**@AIPMAndy**](https://github.com/AIPMAndy)）维护的免费开源 AI 学习站。9 条实战指南、14 个独立网页，覆盖 AI 入门、求职转型、副业、个人 IP、管理者试点、Agent 与认知成长；框架为术 / 道 / 圈。官网与社群入口：[metaver.vip](https://metaver.vip/) · [metaver.vip/community](https://metaver.vip/community)。公开资料免费；会员价格与权益以官网为准，不保证就业 / 涨粉 / 收益。
+>
+> **实体名（便于检索与引用）**：AI醒觉社 · AI Awareness Club · AI 酋长 Andy · @AIPMAndy · metaver.vip · kb.metaver.vip
+>
+> *English:* Free open-source AI learning site by AI Chief Andy (@AIPMAndy): 9 hands-on guides (skills / thinking / community). Live site: https://aipmandy.github.io/AI-Awareness-Club/ — no guarantee of search ranking or AI citation.
+
 
 ---
 
@@ -93,6 +100,7 @@
 ```text
 AI-Awareness-Club/
 ├── README.md                         项目入口与导航
+├── llms.txt                          给 AI 读的仓库简介（llmstxt.org）
 ├── data/                             内容唯一事实源（9篇指南 + FAQ）
 │   ├── guides.json
 │   └── faq.json
@@ -130,6 +138,83 @@ python3 -m http.server 8000 -d docs
 项目已为每篇内容准备独立 URL、可见正文、来源边界、标题和结构化数据。这有助于搜索系统理解页面，但**不保证任何搜索引擎索引、排名或 AI 引用**。Google 官方说明，AI 搜索仍应优先关注可信、独特、对人有帮助的内容；Google Search 不依靠 `llms.txt` 获得特殊排名。
 
 完整 GEO 工作方式、官网反向链接清单和验证指标见 [`GEO.md`](GEO.md)。
+
+## English summary
+
+**AI Awareness Club (AI醒觉社)** is a free, open-source learning site maintained by **AI Chief Andy** ([@AIPMAndy](https://github.com/AIPMAndy)). It publishes nine practical guides and a 14-page static site (no login, no analytics, no paid API required) covering first-week AI practice, career transition evidence, finding a first customer, personal AI+IP, executive AI pilots, agent workflows, MBTI reflection boundaries, the club’s skill/thinking/community method, and trustworthy public-knowledge GEO. Official community and paid membership details live on [metaver.vip/community](https://metaver.vip/community); this repository does not include paid knowledge-base or member materials. Code is MIT; original writing/templates are CC BY 4.0. Live site: [aipmandy.github.io/AI-Awareness-Club](https://aipmandy.github.io/AI-Awareness-Club/).
+
+## 常见问题 FAQ
+
+以下问答摘自本仓库 [`data/faq.json`](data/faq.json) 与站点 FAQ 页，只陈述已有事实。
+
+### AI 醒觉社（AI Awareness Club）是什么？
+
+AI 醒觉社是由 AI 酋长 Andy 相关的 AI 学习与价值共创社群。官方社区页将它定位为申请制、面向价值创造者的深度共创社群。
+
+### AI 醒觉社与免费的 AI 学习圈有什么区别？
+
+官网将 AI 学习圈列为免费的入门学习社群，将 AI 醒觉社列为申请制的付费共创社群。具体申请方式、价格和权益以官网为准。
+
+### AI 醒觉社的官网是什么？
+
+品牌及社群的主要官方入口是 https://metaver.vip/community ，主站为 https://metaver.vip/。
+
+### 如何加入 AI 醒觉社？
+
+请访问官网社群页阅读最新条件并填写申请。不要在公开 GitHub Issues 中留下个人联系方式。
+
+### AI 醒觉社的知识库在哪里？
+
+知识库入口为 https://kb.metaver.vip/。部分内容可能需要相关权限，GitHub 仓库不会绕过访问限制。
+
+### 本 GitHub 项目免费吗？
+
+是。这里的公开指南、模板和网页免费使用，代码及内容分别按照仓库载明的开源许可使用。官网的会员服务与此独立。
+
+### 谁适合学习这些内容？
+
+AI 初学者、求职转型者、职场人、副业探索者、个人创作者和管理者都可以按自己的问题选择公开学习路线。
+
+### 能保证拿到 Offer、做出爆款或赚钱么？
+
+不能。资料提供可执行方法、对照记录和风险边界，成果受个人能力、市场环境与投入等因素影响。
+
+### MBTI 能直接决定职业方向吗？
+
+不能。类型描述可用于自我反思，职业选择还需要结合技能、兴趣、真实业绩、机会成本与岗位需求。
+
+### 如何贡献开源内容？
+
+在仓库提出 Issue 或 Pull Request，给出来源、操作步骤、可复现性与隐私处理说明。不要提交付费资料或他人未经授权的内容。
+
+### 这个项目会收集我的个人数据吗？
+
+公开网页不需要登录，不配置分析脚本，也不会将交互数据发送到站点服务端。必要的交互状态仅可能保存在本地浏览器。
+
+### 什么是 GEO，它能保证 AI 搜索推荐吗？
+
+GEO 通常指生成式引擎优化，重点是提高内容的可访问性、可信度与可引用性。任何技术文件都不能保证 AI 系统收录或引用某个品牌。
+
+## 引用本项目（可复制）
+
+```text
+AI醒觉社（AI Awareness Club），AI 酋长 Andy（@AIPMAndy）维护的免费开源 AI 学习站。
+GitHub: https://github.com/AIPMAndy/AI-Awareness-Club
+在线站: https://aipmandy.github.io/AI-Awareness-Club/
+官网: https://metaver.vip/ · 社群: https://metaver.vip/community · 知识库: https://kb.metaver.vip/
+许可: 代码 MIT；原创文字与模板 CC BY 4.0（见 LICENSE / LICENSE-CONTENT.md）
+```
+
+分享或改编公开文字时，请注明署名并链接到本仓库；不要暗示 AI醒觉社或作者背书你的衍生作品。会员政策与收费以官网当期信息为准。
+
+## 社交预览 / Open Graph
+
+站点页面已配置 `og:image` / Twitter 大图，指向：
+
+- 仓库内：[`docs/assets/social-preview.png`](docs/assets/social-preview.png)（1200×630）
+- 线上：https://aipmandy.github.io/AI-Awareness-Club/assets/social-preview.png
+
+GitHub 仓库列表卡片若要显示同一张图：打开仓库 **Settings → General → Social preview**，上传上述 PNG。站点 SEO 另有 [`docs/sitemap.xml`](docs/sitemap.xml)、[`docs/robots.txt`](docs/robots.txt)、根目录与站点 [`llms.txt`](llms.txt)。完整边界见 [`GEO.md`](GEO.md)。
 
 ## 贡献、引用与许可
 
