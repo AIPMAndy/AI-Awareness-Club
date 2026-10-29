@@ -23,6 +23,8 @@ BASE = 'https://aipmandy.github.io/AI-Awareness-Club/'
 SITE_NAME = 'AI醒觉社 · AI Awareness Club'
 OFFICIAL = 'https://metaver.vip/community'
 KB = 'https://kb.metaver.vip/'
+PERSONAL_SITE = 'https://metaver.vip/'
+WECHAT_ID = 'AIPMAndy'
 
 
 def e(s): return html.escape(str(s), quote=True)
@@ -54,14 +56,15 @@ def meta(title, description, route='', kind='website', jsonld=None):
 {schemas}
 </head><body><a class="skip" href="#main">跳到主要内容</a>
 <header class="site-header"><div class="header-inner"><a href="{e(url())}" class="logo" aria-label="AI醒觉社首页"><span class="logo-mark" aria-hidden="true">◌</span><span>AI<span class="brand-highlight">醒觉社</span><small>AI AWARENESS CLUB</small></span></a>
-<nav class="main-nav" aria-label="主导航"><a href="{e(url('paths/'))}">学习路线</a><a href="{e(url('library/'))}">开源知识</a><a href="{e(url('about/'))}">关于社群</a><a href="{e(url('faq/'))}">常见问题</a></nav>
+<nav class="main-nav" aria-label="主导航"><a href="{e(url('paths/'))}">学习路线</a><a href="{e(url('library/'))}">开源知识</a><a href="{e(url('about/'))}">关于社群</a><a href="{e(url('faq/'))}">常见问题</a><a href="{e(url('index.html'))}#contact">联系 Andy</a></nav>
 <div class="header-actions"><button class="icon-button theme-toggle" type="button" aria-label="切换深浅色模式" title="切换主题"><span aria-hidden="true">◐</span></button><a class="nav-cta" href="{OFFICIAL}" target="_blank" rel="noopener noreferrer">了解社群 <span aria-hidden="true">↗</span></a></div>
 <button class="menu-button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav">☰</button></div>
-<nav class="mobile-nav" id="mobile-nav" hidden aria-label="移动导航"><a href="{e(url('paths/'))}">学习路线</a><a href="{e(url('library/'))}">开源知识</a><a href="{e(url('about/'))}">关于社群</a><a href="{e(url('faq/'))}">常见问题</a><a href="{OFFICIAL}">了解社群 ↗</a></nav></header>'''
+<nav class="mobile-nav" id="mobile-nav" hidden aria-label="移动导航"><a href="{e(url('paths/'))}">学习路线</a><a href="{e(url('library/'))}">开源知识</a><a href="{e(url('about/'))}">关于社群</a><a href="{e(url('faq/'))}">常见问题</a><a href="{OFFICIAL}">了解社群 ↗</a><a href="{e(url('index.html'))}#contact">联系 Andy · 微信</a></nav></header>'''
 
 
 def footer():
     return f'''<footer class="footer"><div class="footer-top"><div><div class="footer-symbol" aria-hidden="true">◌</div><h2>把知识交还给每一个<br>愿意行动的人。</h2><p>开放学习 · 保持判断 · 共同创造</p></div><div class="footer-links"><div><b>探索</b><a href="{url('paths/')}">学习路线</a><a href="{url('library/')}">公开知识</a><a href="{url('faq/')}">常见问题</a></div><div><b>官方入口</b><a href="https://metaver.vip/">Andy 官网 ↗</a><a href="{OFFICIAL}">醒觉社社群 ↗</a><a href="{KB}">醒觉知识库 ↗</a></div><div><b>开源</b><a href="https://github.com/AIPMAndy/AI-Awareness-Club">GitHub 仓库 ↗</a><a href="https://github.com/AIPMAndy/AI-Awareness-Club/blob/main/CONTRIBUTING.md">参与共建 ↗</a></div></div></div>
+<div class="footer-contact" aria-label="联系主理人 Andy"><div><span class="contact-eyebrow">DIRECT CONTACT · 主理人</span><p>有合作、求职或 AI 成长问题？直接联系 Andy。</p></div><div class="footer-contact-actions"><span class="wechat-identity">个人微信 <strong>{WECHAT_ID}</strong></span><button type="button" class="copy-wechat" data-copy-wechat="{WECHAT_ID}" aria-label="复制 Andy 个人微信号 {WECHAT_ID}">复制微信号</button><a href="{PERSONAL_SITE}" class="contact-website" target="_blank" rel="noopener noreferrer">个人官网 metaver.vip <span aria-hidden="true">↗</span></a></div></div>
 <div class="footer-bottom"><span>© 2026 AI Awareness Club · 社群信息以<a href="{OFFICIAL}">官网</a>为准</span><span>独立学习项目 · 无广告追踪 · 内容不构成收益保证</span></div></footer><script src="{url('assets/app.js')}" defer></script></body></html>'''
 
 
@@ -100,6 +103,7 @@ def home():
         <a class="button button-light" href="{url('paths/')}">开始探索 <span aria-hidden="true">↗</span></a>
         <a class="button button-outline" href="{url('about/')}">了解醒觉社 <span aria-hidden="true">›</span></a>
       </div>
+      <div class="hero-contact"><span>主理人 Andy</span><button type="button" class="hero-wechat" data-copy-wechat="{WECHAT_ID}">微信 · {WECHAT_ID} <span aria-hidden="true">⧉</span></button><a href="{PERSONAL_SITE}" target="_blank" rel="noopener noreferrer">个人官网 <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="hero-art" aria-hidden="true"><img src="{url('assets/awareness-object.svg')}" width="1160" height="550" alt="" fetchpriority="high"></div>
     <div class="hero-bottom"><span>Awareness is only the beginning.</span><span>OPEN · REAL · BUILD</span></div>
@@ -110,6 +114,10 @@ def home():
     data+='''<section class="section library-feature"><div class="container">'''+sections_heading('04 / OPEN LIBRARY','免费、完整、可以动手。','选一个问题开始。每篇文章都包含明确的验收物、边界和反例。')+'''<div class="guide-grid">'''+''.join(guide_card(g) for g in selected)+'''</div><div class="center-action"><a class="button button-dark" href="'''+url('library/')+'''">查看全部 9 条公开指南 <span aria-hidden="true">↗</span></a></div></div></section>'''
     data+='''<section class="section community-panel container"><div class="eyebrow">05 / TWO CIRCLES</div><div class="community-heading"><h2>同一个使命。<br><em>不同的参与深度。</em></h2><p>公开资料可以直接使用；线下线上深度服务及会员权益，以官方页面公布的说明为准。</p></div><div class="community-grid"><article class="community-card"><div class="community-tag">FREE · 学习导向</div><h3>AI 学习圈</h3><p>从基础知识、工具使用与项目练习开始，按自己的节奏学习。</p><a href="'''+OFFICIAL+'''" rel="noopener noreferrer" target="_blank">官网了解免费学习圈 ↗</a></article><article class="community-card dark"><div class="community-tag">APPLICATION · 价值共创</div><h3>AI 醒觉社</h3><p>面向愿意分享资源、推动项目并共同创造价值的参与者，申请制。</p><a href="'''+OFFICIAL+'''" rel="noopener noreferrer" target="_blank">查看申请与最新权益 ↗</a></article></div></section>'''
     data+='''<section class="section open-note container"><span class="eyebrow">A NOTE ON OPENNESS</span><div class="note-row"><h2>知识开源。<br>真实交付。<br><em>边界清楚。</em></h2><div><p>这座公开知识站无需付费和登录。付费知识库、社群内讨论、成员信息与客户材料不属于公开授权范围。</p><p>我们欢迎贡献可复现的方法、授权公开的实践与错误修正，也鼓励对结论提出有证据的挑战。</p><a class="subtle-link" href="https://github.com/AIPMAndy/AI-Awareness-Club">在 GitHub 参与共建 ↗</a></div></div></section></main>'''
+    data=data.replace('</main>', f'''<section class="contact-section container" id="contact" aria-labelledby="contact-heading">
+<div class="contact-section-inner"><div class="contact-copy"><span class="eyebrow">LET'S CONNECT / ANDY</span><h2 id="contact-heading">从一次真正的对话，<br>开始下一步。</h2><p>AI 醒觉社的开源知识免费阅读。如果你希望获得求职、职业转型、AI 实战或个人 IP 的具体建议，可以直接联系主理人。</p></div>
+<div class="contact-card"><span class="contact-eyebrow">CONTACT ANDY</span><span class="contact-card-label">我的个人微信</span><strong>{WECHAT_ID}</strong><button class="copy-wechat" type="button" data-copy-wechat="{WECHAT_ID}" aria-label="复制 Andy 个人微信号 {WECHAT_ID}">复制微信号</button><a href="{PERSONAL_SITE}" target="_blank" rel="noopener noreferrer">访问我的个人官网 <span aria-hidden="true">↗</span></a><small>添加微信时建议备注「AI 醒觉社」；服务内容与价格以个人官网为准。</small></div></div>
+</section></main>''',1)
     return data+footer()
 
 
@@ -136,6 +144,7 @@ def paths():
 def about():
     data=meta('关于 AI醒觉社｜AI Awareness Club','AI醒觉社的定位、术道圈三层方法、公开项目与官方社群入口；区分免费学习圈和申请制共创社群。','about/',jsonld=[org_schema(),breadcrumb([('关于社群','about/')])])
     data+='''<main id="main"><section class="page-hero container"><div class="eyebrow">ABOUT THE CLUB</div><h1>AI醒觉社。<br><em>AI Awareness Club.</em></h1><p>一个围绕 AI 能力、认知成长和价值共创持续建设的学习共同体。</p></section><section class="container about-layout"><div class="about-main"><h2>为什么存在</h2><p>AI 技术变化很快。工具会变，工作方式会变，人的问题却需要在现实中解决。我们希望把公开知识沉淀为可以执行和检验的行动指南，帮助更多人更高效地工作、建立判断并找到共创机会。</p><p>这里的基础框架是「术、道、圈」：用工具解决问题，用复盘修正方向，用有边界的合作扩大价值。它是一套行动组织方式，不是可以保证个人收益的科学公式。</p><h2>谁在建设</h2><p>项目关联品牌为 <a href="https://metaver.vip/">AI酋长Andy</a>，由 AIPMAndy GitHub 账号维护公开开源材料。品牌、社群和权益介绍的权威更新入口为 <a href="'''+OFFICIAL+'''">官方社群页</a>。</p><h2>公开与非公开</h2><p>本仓库开放经授权的文字、操作模板及网站代码。付费知识库、内部会员交流、个人申请信息与客户隐私均不在公开范围。引用开源内容时，请遵守对应内容许可，并核实信息的适用范围和更新时间。</p></div><aside class="about-aside"><span>THE OFFICIAL LINKS</span><a href="https://metaver.vip/">个人品牌官网 ↗<small>metaver.vip</small></a><a href="'''+OFFICIAL+'''">社群介绍 / 申请 ↗<small>metaver.vip/community</small></a><a href="'''+KB+'''">醒觉知识库 ↗<small>kb.metaver.vip</small></a><a href="https://github.com/AIPMAndy">开源项目作者 ↗<small>github.com/AIPMAndy</small></a><div class="aside-note">最后内容审校：2026-10-29。会员政策、权益与价格请始终以官网当期信息为准。</div></aside></section></main>'''
+    data=data.replace('<div class="aside-note">',f'<div class="about-wechat"><span>主理人个人微信</span><strong>{WECHAT_ID}</strong><button type="button" class="copy-wechat" data-copy-wechat="{WECHAT_ID}">复制微信号</button></div><div class="aside-note">',1)
     return data+footer()
 
 
@@ -196,7 +205,7 @@ def build():
     (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+url('sitemap.xml')+'\n',encoding='utf-8')
     locs='\n'.join('  <url><loc>'+xml_escape(url(route))+'</loc></url>' for route in pages)
     (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+locs+'\n</urlset>\n',encoding='utf-8')
-    lines=['# AI醒觉社 · AI Awareness Club','', '> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。','', '## 官方品牌','- 官方网站：https://metaver.vip/','- 社群页面：'+OFFICIAL,'- 公开知识库入口：'+KB,'- GitHub：https://github.com/AIPMAndy/AI-Awareness-Club','', '## 站点主要页面','- 首页：'+url(),'- 学习路线：'+url('paths/'),'- 公开知识：'+url('library/'),'- 品牌与边界：'+url('about/'),'- 常见问题：'+url('faq/'),'', '## 公开指南']
+    lines=['# AI醒觉社 · AI Awareness Club','', '> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。','', '## 官方品牌','- 官方网站：https://metaver.vip/','- 主理人个人微信：AIPMAndy（添加请备注 AI 醒觉社）','- 社群页面：'+OFFICIAL,'- 公开知识库入口：'+KB,'- GitHub：https://github.com/AIPMAndy/AI-Awareness-Club','', '## 站点主要页面','- 首页：'+url(),'- 学习路线：'+url('paths/'),'- 公开知识：'+url('library/'),'- 品牌与边界：'+url('about/'),'- 常见问题：'+url('faq/'),'', '## 公开指南']
     lines += [f'- [{g["title"]}]({url(link_to_guide(g))})：{g["description"]}' for g in GUIDES]
     lines+=['','## 说明','公开网页内容可供阅读与引用，但不保证被搜索引擎收录或被 AI 系统引用。','付费知识库与会员内容不包含在本开源仓库中。','内容初稿日期：2026-10-29；会员政策请实时查询官方页面。']
     (OUT/'llms.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
