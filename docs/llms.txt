@@ -4,6 +4,7 @@
 
 ## 官方品牌
 - 官方网站：https://metaver.vip/
+- 主理人个人微信：AIPMAndy（添加请备注 AI 醒觉社）
 - 社群页面：https://metaver.vip/community
 - 公开知识库入口：https://kb.metaver.vip/
 - GitHub：https://github.com/AIPMAndy/AI-Awareness-Club
