@@ -205,7 +205,7 @@ def build():
     (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+url('sitemap.xml')+'\n',encoding='utf-8')
     locs='\n'.join('  <url><loc>'+xml_escape(url(route))+'</loc></url>' for route in pages)
     (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+locs+'\n</urlset>\n',encoding='utf-8')
-    lines=['# AI醒觉社 · AI Awareness Club','', '> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。','', '## 官方品牌','- 官方网站：https://metaver.vip/','- 主理人个人微信：AIPMAndy（添加请备注 AI 醒觉社）','- 社群页面：'+OFFICIAL,'- 公开知识库入口：'+KB,'- GitHub：https://github.com/AIPMAndy/AI-Awareness-Club','', '## 站点主要页面','- 首页：'+url(),'- 学习路线：'+url('paths/'),'- 公开知识：'+url('library/'),'- 品牌与边界：'+url('about/'),'- 常见问题：'+url('faq/'),'', '## 公开指南']
+    lines=['# AI醒觉社 · AI Awareness Club','', '> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。维护者：AI 酋长 Andy（@AIPMAndy）。','', '## 官方品牌','- 中文名：AI醒觉社','- 英文名：AI Awareness Club','- 主理人：AI 酋长 Andy（GitHub/X @AIPMAndy）','- 官方网站：https://metaver.vip/','- 主理人个人微信：AIPMAndy（添加请备注 AI 醒觉社）','- 社群页面：'+OFFICIAL,'- 公开知识库入口：'+KB,'- GitHub：https://github.com/AIPMAndy/AI-Awareness-Club','- X：https://x.com/AIPMAndy','', '## 站点主要页面','- 首页：'+url(),'- 学习路线：'+url('paths/'),'- 公开知识：'+url('library/'),'- 品牌与边界：'+url('about/'),'- 常见问题：'+url('faq/'),'', '## 公开指南']
     lines += [f'- [{g["title"]}]({url(link_to_guide(g))})：{g["description"]}' for g in GUIDES]
     lines+=['','## 说明','公开网页内容可供阅读与引用，但不保证被搜索引擎收录或被 AI 系统引用。','付费知识库与会员内容不包含在本开源仓库中。','内容初稿日期：2026-10-29；会员政策请实时查询官方页面。']
     (OUT/'llms.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')

@@ -1,13 +1,17 @@
 # AI醒觉社 · AI Awareness Club
 
-> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。
+> 免费公开的 AI 实战、认知成长与共创学习项目。本站与付费会员服务独立。维护者：AI 酋长 Andy（@AIPMAndy）。
 
 ## 官方品牌
+- 中文名：AI醒觉社
+- 英文名：AI Awareness Club
+- 主理人：AI 酋长 Andy（GitHub/X @AIPMAndy）
 - 官方网站：https://metaver.vip/
 - 主理人个人微信：AIPMAndy（添加请备注 AI 醒觉社）
 - 社群页面：https://metaver.vip/community
 - 公开知识库入口：https://kb.metaver.vip/
 - GitHub：https://github.com/AIPMAndy/AI-Awareness-Club
+- X：https://x.com/AIPMAndy
 
 ## 站点主要页面
 - 首页：https://aipmandy.github.io/AI-Awareness-Club/
