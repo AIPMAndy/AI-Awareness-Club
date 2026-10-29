@@ -22,7 +22,7 @@ Google 官方文档明确强调：AI Overviews / AI Mode 的技术基础仍是�
 - GitHub：`https://github.com/AIPMAndy/AI-Awareness-Club`
 - 开源网站：`https://aipmandy.github.io/AI-Awareness-Club/`
 
-**实施：** 在 `metaver.vip/community` 增加「开源学习站」入口；官网资源区、官方社群页、醒觉知识库可公开区域中相互链接。注意：本站目前只能准备开源仓库代码，**无法自动修改你的官网**。
+**实施：** 在 `metaver.vip/community` 增加「开源学习站」入口；官网资源区、官方社群页、醒觉知识库可公开区域中相互链接。当前开源仓库已公开且源码已推送；官网 `metaver.vip` 的反向链接尚未通过本项目修改或验证。
 
 官网建议短文案：
 > AI 醒觉社（AI Awareness Club）的免费公开学习项目已在 GitHub 开源：AI 入门、AI 求职转型、副业、AI 个人 IP、管理者 AI 试点和认知成长。每条指南配行动步骤与可检验的交付物。完整社群会员权益请看官方社群页。
@@ -77,6 +77,12 @@ Google 官方文档明确强调：AI Overviews / AI Mode 的技术基础仍是�
 - 为官网 `metaver.vip` 的原有页面改进内链与原始内容，但要先确认当前代码仓库和部署权限。
 - 避免购买虚假链接、批量灌水、伪造口碑或滥用结构化数据。
 
-## 本次尚不能代替你完成的外部动作
+## 发布进度（2026-10-29）
 
-**新仓库创建 / 推送、GitHub Pages 启用、官网 `metaver.vip` 反向链接、Google/Bing 搜索站长验证** 都需要对应平台权限。只有实际完成并复测后，才能声称 GEO 基础设施已上线。
+- ✅ **GitHub 公共仓库已创建，源码已经推送：** https://github.com/AIPMAndy/AI-Awareness-Club
+- ✅ **仓库本地内容审查：** 14 个页面、9 条指南；8 项自动测试通过。此项仅代表源码测试，不代表线上可访问。
+- 🔎 **GitHub Pages：** 用户已确认完成 Pages 设置；仍需以 GitHub Actions 的 `Deploy GitHub Pages` 成功结果和实际线上 HTTP 200 为最终验收。
+- ⏳ **官网反向链接：** `https://metaver.vip/community` 与知识库的公开页面尚未通过本项目修改或核验。
+- ⏳ **搜索收录：** Google Search Console / Bing Webmaster Tools 验证与 sitemap 提交尚未核验。不能将代码提交视为搜索收录。
+
+每次更新 `main` 会重新触发已有的 Pages 部署工作流。最终上线情况以 Actions 结果及浏览器访问为准。
