@@ -13,7 +13,7 @@
 [![Build: No dependencies](https://img.shields.io/badge/%E6%9E%84%E5%BB%BA-Python_%E6%A0%87%E5%87%86%E5%BA%93-567b63)](scripts/build.py)
 [![Privacy: No analytics](https://img.shields.io/badge/%E9%9A%90%E7%A7%81-%E6%97%A0%E8%BF%BD%E8%B8%AA-3a6d6a)](SECURITY.md)
 
-**[🌿 打开在线学习站](https://aipmandy.github.io/AI-Awareness-Club/)** · **[从学习路线开始](https://aipmandy.github.io/AI-Awareness-Club/paths/)** · [全部公开指南](docs/library/index.html) · [桌面首屏](audit/apple-desktop-firstfold.jpg) · [手机首屏](audit/apple-mobile-firstfold.jpg) · [视觉设计规范](DESIGN.md) · [设计验收](audit/APPLE_STYLE_QA.md) · [关于醒觉社](https://metaver.vip/community) · [Andy 官网](https://metaver.vip/)
+**[🌿 打开在线学习站](https://aipmandy.github.io/AI-Awareness-Club/)** · **[从学习路线开始](https://aipmandy.github.io/AI-Awareness-Club/paths/)** · [全部公开指南](docs/library/index.html) · [桌面首屏](audit/apple-desktop-firstfold.jpg) · [手机首屏](audit/apple-mobile-firstfold.jpg) · [视觉设计规范](DESIGN.md) · [设计验收](audit/APPLE_STYLE_QA.md) · [关于醒觉社](https://metaver.vip/community) · [Andy 个人官网](https://metaver.vip/) · **个人微信：AIPMAndy**
 
 <sub>在线地址需在 GitHub Pages 部署完成后生效。当前仓库代码可直接本地预览。</sub>
 </div>
@@ -26,7 +26,15 @@
 
 你不需要先购买课程、填入个人信息或加入付费社群。打开任意一份公开指南，就能开始完成第一个交付物。项目由 GitHub 账号 [AIPMAndy](https://github.com/AIPMAndy) 维护，关联品牌为 [AI酋长Andy](https://metaver.vip/)。
 
-> **公开范围说明：** 本仓库只包含授权公开的原创方法、模板及网页代码；不包含收费知识库内容、会员聊天、客户资料、私人联系方式或未经许可转载的材料。官方的加入条件、价格和权益以 [AI醒觉社社群页](https://metaver.vip/community) 为准。
+> **公开范围说明：** 本仓库只包含授权公开的原创方法、模板及网页代码；不包含收费知识库内容、会员聊天、客户资料、未经授权的第三方联系方式或未经许可转载的材料。官方的加入条件、价格和权益以 [AI醒觉社社群页](https://metaver.vip/community) 为准。
+
+## 联系主理人 Andy
+
+**个人微信：`AIPMAndy`**（添加时建议备注「AI 醒觉社」）  
+**个人官网：[metaver.vip](https://metaver.vip/)**  
+**官网社群页：[metaver.vip/community](https://metaver.vip/community)**
+
+公开指南可以免费使用。需要求职、AI 转型、个人 IP 或项目咨询，可通过个人微信联系；具体服务内容与收费以个人官网为准。
 
 ## 30 秒找到你的入口
 
