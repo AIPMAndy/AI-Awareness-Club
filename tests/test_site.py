@@ -132,4 +132,20 @@ class ContentChecks(unittest.TestCase):
             self.assertIn('guides/'+g['slug']+'/',library)
             self.assertTrue((DOCS/'guides'/g['slug']/'index.html').is_file())
 
+    def test_andy_contact_visible_and_functional(self):
+        homepage=(DOCS/'index.html').read_text(encoding='utf-8')
+        about=(DOCS/'about/index.html').read_text(encoding='utf-8')
+        readme=(ROOT/'README.md').read_text(encoding='utf-8')
+        js=(DOCS/'assets/app.js').read_text(encoding='utf-8')
+        for page in self.pages:
+            text=page.read_text(encoding='utf-8')
+            self.assertIn('个人微信',text,str(page))
+            self.assertIn('AIPMAndy',text,str(page))
+            self.assertIn('https://metaver.vip/',text,str(page))
+            self.assertIn('data-copy-wechat=',text,str(page))
+        self.assertIn('id="contact"',homepage)
+        self.assertIn('主理人个人微信',about)
+        self.assertIn('个人微信',readme)
+        self.assertIn('navigator.clipboard',js)
+
 if __name__=='__main__': unittest.main()
