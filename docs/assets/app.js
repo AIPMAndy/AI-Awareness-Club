@@ -109,5 +109,5 @@
       button.textContent = '请手动复制：' + wechat;
     }
     window.setTimeout(() => { button.textContent = label; }, 3500);
-  });
+  }));
 })();
