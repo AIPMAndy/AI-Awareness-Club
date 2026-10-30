@@ -768,3 +768,15 @@ h1,h2,h3{font-family:var(--display)}
 html[data-theme="dark"] body{background:#151518;color:#f5f5f7}
 html[data-theme="dark"] .apple-hero{background:#0a0c0d!important}
 html[data-theme="dark"] .apple-hero .hero-statement{color:#f5f5f7}
+
+
+/* BROWSER QA V3 POLISH — render product immediately, keep it in first fold */
+.apple-hero .hero-art{animation:none!important;margin-top:-8px}
+.apple-hero .hero-content{padding-top:66px}
+.apple-hero h1{font-size:clamp(59px,7.3vw,95px)}
+.apple-hero .hero-statement{font-size:clamp(26px,3.05vw,40px)}
+@media(max-width:700px){
+ .apple-hero .hero-content{padding-top:64px}
+ .apple-hero h1{font-size:clamp(52px,11.4vw,72px)}
+ .apple-hero .hero-art{margin-top:-6px}
+}
