@@ -1,36 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1380" height="660" viewBox="0 0 1380 660" role="img" aria-labelledby="title desc">
-<title id="title">AI 醒觉社原创光学景观</title><desc id="desc">由三条半透明金属光轨和中心玻璃球构成，象征实践、觉察与共创。</desc>
+<title id="title">AI 醒觉社 · 三层成长体系</title>
+<desc id="desc">原创暖白玻璃质感的三个浮动层，代表术、道、圈。</desc>
 <defs>
-<radialGradient id="space" cx=".5" cy=".39" r=".56"><stop stop-color="#184738"/><stop offset=".55" stop-color="#0a241b"/><stop offset="1" stop-color="#050807"/></radialGradient>
-<radialGradient id="aura" cx=".5" cy=".5" r=".5"><stop stop-color="#72f2b6" stop-opacity=".49"/><stop offset=".5" stop-color="#3baf7b" stop-opacity=".23"/><stop offset="1" stop-color="#0d291d" stop-opacity="0"/></radialGradient>
-<radialGradient id="glass" cx=".29" cy=".2" r=".8"><stop stop-color="#f8fff9"/><stop offset=".11" stop-color="#bff4d9"/><stop offset=".28" stop-color="#60c29b"/><stop offset=".48" stop-color="#1d7759"/><stop offset=".73" stop-color="#0c392a"/><stop offset=".88" stop-color="#2c8866"/><stop offset="1" stop-color="#9fe7bf"/></radialGradient>
-<radialGradient id="inner" cx=".3" cy=".22" r=".9"><stop stop-color="#f2fff5" stop-opacity=".94"/><stop offset=".2" stop-color="#a9edd0" stop-opacity=".82"/><stop offset=".52" stop-color="#2d906c" stop-opacity=".61"/><stop offset=".8" stop-color="#104532" stop-opacity=".52"/><stop offset="1" stop-color="#0c3022" stop-opacity=".68"/></radialGradient>
-<linearGradient id="chrome" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#ffffff"/><stop offset=".15" stop-color="#e1ffeb"/><stop offset=".31" stop-color="#8ac7a6"/><stop offset=".5" stop-color="#1e644b"/><stop offset=".69" stop-color="#7cb998"/><stop offset=".83" stop-color="#effff3"/><stop offset="1" stop-color="#6caf86"/></linearGradient>
-<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#effff8" stop-opacity=".93"/><stop offset=".23" stop-color="#65ab90" stop-opacity=".5"/><stop offset=".5" stop-color="#103e2b" stop-opacity=".17"/><stop offset=".77" stop-color="#e6fff2" stop-opacity=".8"/><stop offset="1" stop-color="#5e977b" stop-opacity=".35"/></linearGradient>
-<filter id="blur"><feGaussianBlur stdDeviation="31"/></filter>
-<filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
-<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="33" stdDeviation="26" flood-color="#000" flood-opacity=".65"/></filter>
+  <radialGradient id="ambient"><stop stop-color="#bddfc4" stop-opacity=".66"/><stop offset=".52" stop-color="#e0ebda" stop-opacity=".31"/><stop offset="1" stop-color="#faf9f6" stop-opacity="0"/></radialGradient>
+  <linearGradient id="ivory" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff" stop-opacity=".98"/><stop offset=".57" stop-color="#fcfdf9" stop-opacity=".96"/><stop offset="1" stop-color="#edf2e9" stop-opacity=".97"/></linearGradient>
+  <linearGradient id="sage" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f4faf2"/><stop offset=".58" stop-color="#dde9dc"/><stop offset="1" stop-color="#c9decf"/></linearGradient>
+  <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff" stop-opacity=".94"/><stop offset=".4" stop-color="#f3f8f0" stop-opacity=".87"/><stop offset=".85" stop-color="#bedac5" stop-opacity=".67"/><stop offset="1" stop-color="#fff" stop-opacity=".96"/></linearGradient>
+  <linearGradient id="emerald" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7cb38d"/><stop offset=".58" stop-color="#285f46"/><stop offset="1" stop-color="#173e31"/></linearGradient>
+  <radialGradient id="orb"><stop stop-color="#fbfff7"/><stop offset=".21" stop-color="#d4ecd9"/><stop offset=".53" stop-color="#6ba984"/><stop offset=".88" stop-color="#235a42"/><stop offset="1" stop-color="#e7f7e9"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="40"/></filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="35" stdDeviation="29" flood-color="#416851" flood-opacity=".19"/></filter>
+  <filter id="lightshadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#4f6854" flood-opacity=".1"/></filter>
 </defs>
-<rect width="1380" height="660" fill="url(#space)"/>
-<ellipse cx="690" cy="280" rx="530" ry="350" fill="url(#aura)" filter="url(#blur)"/>
-<ellipse cx="690" cy="601" rx="315" ry="24" fill="#0b0f0b" opacity=".78" filter="url(#blur)"/>
-<!-- floating machined loops -->
-<g filter="url(#shadow)" fill="none" stroke-linecap="round">
-<ellipse cx="690" cy="290" rx="460" ry="160" transform="rotate(-23 690 290)" stroke="url(#chrome)" stroke-width="34" opacity=".96"/>
-<ellipse cx="690" cy="290" rx="460" ry="160" transform="rotate(-23 690 290)" stroke="url(#edge)" stroke-width="11"/>
-<ellipse cx="690" cy="290" rx="425" ry="148" transform="rotate(29 690 290)" stroke="url(#chrome)" stroke-width="23" opacity=".87"/>
-<ellipse cx="690" cy="290" rx="425" ry="148" transform="rotate(29 690 290)" stroke="url(#edge)" stroke-width="4" opacity=".8"/>
+<ellipse cx="690" cy="338" rx="530" ry="255" fill="url(#ambient)" filter="url(#soft)"/>
+<ellipse cx="691" cy="580" rx="365" ry="28" fill="#8faa93" opacity=".18" filter="url(#soft)"/>
+<!-- two rear layers, softly angled for depth -->
+<g transform="rotate(-11 335 309)" filter="url(#lightshadow)">
+  <rect x="174" y="141" width="355" height="351" rx="32" fill="url(#sage)" stroke="#fff" stroke-width="3"/>
+  <rect x="193" y="160" width="317" height="313" rx="22" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="1"/>
+  <text x="218" y="202" fill="#6c8f74" font-family="Arial, sans-serif" font-size="13" letter-spacing="2.2">01 / PRACTICE</text>
+  <text x="216" y="334" fill="#2c6248" font-family="Arial, PingFang SC, sans-serif" font-size="102" font-weight="600">术</text>
+  <path d="M219 379H447" stroke="#aac6ad" stroke-width="1"/>
+  <text x="219" y="414" fill="#678e71" font-family="Arial, sans-serif" font-size="15" letter-spacing=".4">SKILLS TO ACTION</text>
 </g>
+<g transform="rotate(10 1028 330)" filter="url(#lightshadow)">
+  <rect x="847" y="140" width="354" height="357" rx="32" fill="url(#glass)" stroke="#fff" stroke-width="3"/>
+  <rect x="866" y="159" width="316" height="319" rx="22" fill="none" stroke="#fff" stroke-opacity=".72" stroke-width="1"/>
+  <text x="891" y="203" fill="#6f9780" font-family="Arial, sans-serif" font-size="13" letter-spacing="2.2">03 / COMMUNITY</text>
+  <text x="887" y="341" fill="#2e6950" font-family="Arial, PingFang SC, sans-serif" font-size="103" font-weight="600">圈</text>
+  <path d="M891 385H1128" stroke="#b1cdb8" stroke-width="1"/>
+  <text x="891" y="419" fill="#6a9078" font-family="Arial, sans-serif" font-size="15">CREATE TOGETHER</text>
+</g>
+<!-- the hero layer, tactile ceramic-glass hybrid -->
 <g filter="url(#shadow)">
-<circle cx="690" cy="286" r="199" fill="url(#glass)" stroke="#d4ffe5" stroke-opacity=".67" stroke-width="2"/>
-<circle cx="690" cy="286" r="171" fill="url(#inner)" stroke="#e6fff3" stroke-opacity=".43" stroke-width="1.5"/>
-<circle cx="690" cy="286" r="160" fill="none" stroke="#a0dbb5" stroke-opacity=".15"/>
-<ellipse cx="615" cy="199" rx="49" ry="28" fill="#f0fff4" opacity=".52" transform="rotate(-33 615 199)" filter="url(#glow)"/>
-<path d="M548 205C581 132 664 91 748 111" stroke="#fff" stroke-opacity=".73" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-<path d="M789 444C849 411 883 367 886 311" stroke="#d7fff0" stroke-opacity=".62" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+  <rect x="458" y="74" width="468" height="449" rx="37" fill="url(#ivory)" stroke="#fff" stroke-width="4"/>
+  <rect x="476" y="92" width="432" height="413" rx="27" fill="none" stroke="#d8e7da" stroke-opacity=".83" stroke-width="1.4"/>
+  <path d="M497 99H885" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+  <rect x="495" y="114" width="155" height="32" rx="16" fill="#eaf2e9"/>
+  <text x="573" y="135" fill="#62866e" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.8">02 / CLARITY</text>
+  <circle cx="691" cy="289" r="123" fill="url(#orb)"/>
+  <circle cx="691" cy="289" r="118" fill="none" stroke="#f5fff5" stroke-width="2.5" opacity=".9"/>
+  <path d="M601 218C631 175 691 156 744 175" fill="none" stroke="#fff" stroke-width="4" opacity=".63" stroke-linecap="round"/>
+  <text x="691" y="314" fill="#fffef8" font-family="Arial, sans-serif" font-size="83" text-anchor="middle" font-weight="600" letter-spacing="-10">AI</text>
+  <path d="M545 441H840" stroke="#e0e9de" stroke-width="1"/>
+  <text x="691" y="471" fill="#44705a" font-family="Arial, sans-serif" font-size="15" letter-spacing="3" text-anchor="middle">AWARENESS</text>
 </g>
-<!-- foreground glass rim; slight chromatic separation as on polished optical glass -->
-<path d="M365 467C495 576 906 524 1037 346" fill="none" stroke="#ebfff2" stroke-opacity=".2" stroke-width="1"/>
-<path d="M293 356C421 487 906 554 1080 270" fill="none" stroke="#d3fcec" stroke-opacity=".11" stroke-width="2"/>
-<circle cx="293" cy="357" r="3" fill="#99d4b8"/><circle cx="1081" cy="270" r="3" fill="#80c59f"/>
+<text x="151" y="601" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#8ba591">OPEN KNOWLEDGE</text>
+<text x="1110" y="601" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#8ba591">EST. 2026</text>
 </svg>
