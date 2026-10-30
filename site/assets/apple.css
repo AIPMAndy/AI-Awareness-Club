@@ -56,7 +56,7 @@ p{line-height:1.75}
 .apple-hero .hero-art img{display:block;width:100%;height:100%;object-fit:contain;filter:none!important;transform:none!important}
 .apple-hero .hero-art .legacy-art{display:none!important}
 .apple-hero .hero-bottom{width:min(1080px,calc(100% - 64px));max-width:none;position:relative;z-index:2;margin:0 auto;padding:18px 0 23px;color:#8d958e;letter-spacing:.12em;text-transform:uppercase;font-size:10px;display:flex;justify-content:space-between}
-@media(prefers-reduced-motion:no-preference){.apple-hero .hero-art{animation:awakeReveal 1.1s cubic-bezier(.15,.65,.25,1) both}}
+@media(prefers-reduced-motion:no-preference){.apple-hero .hero-art{animation:none}}
 @keyframes awakeReveal{from{opacity:.2;transform:scale(.965) translateY(22px)}to{opacity:1;transform:none}}
 /* editorial reading rhythm and restrained feature grids */
 .ethos{border:0;text-align:center;max-width:1050px;padding-block:150px}
