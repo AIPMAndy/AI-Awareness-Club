@@ -429,3 +429,23 @@ html[data-theme="dark"] .footer-contact .wechat-identity strong{color:#fff}
  .footer-contact{width:calc(100% - 36px);padding:18px;margin-bottom:26px}
  .footer-contact-actions{align-items:flex-start}
 }
+
+/* EDITORIAL-2026: warm ivory and forest-green visual refresh */
+:root,html[data-theme="light"]{--page:#f8f7f4;--surface:#fff;--surface2:#f1f2ed;--ink:#17191c;--muted:#68716d;--stroke:#dedfd9;--accent:#315f52;--accent-dark:#315f52;--hero:#f8f7f4;--hero2:#fff}
+body{background:#f8f7f4;color:#17191c;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.8}
+:where(a,button,input,select,summary):focus-visible{outline:3px solid #315f52;outline-offset:3px}
+.site-header{background:rgba(248,247,244,.94);border-bottom:1px solid #dedfd9;backdrop-filter:blur(16px)}
+.nav-cta,.button-primary{background:#315f52!important;color:#fff!important;border-radius:12px}
+.apple-hero,.hero{background:#f8f7f4!important;color:#17191c!important}
+.apple-hero .hero-content{padding-top:clamp(64px,9vw,116px);padding-bottom:48px}
+.apple-hero h1{color:#17191c;font-size:clamp(44px,7vw,88px);line-height:1.14}
+.apple-hero .hero-statement span{background:none!important;-webkit-background-clip:initial!important;color:#315f52!important}
+.apple-hero .hero-description,.apple-hero .hero-statement{color:#17191c}
+.apple-hero .status-dot{background:#315f52;box-shadow:none}
+.hero-glow,.hero-orbit{display:none!important}
+.section{padding-block:clamp(64px,9vw,112px)}
+.container{width:min(1120px,calc(100% - 40px))}
+.guide-body p,.about-main p,.guide-intro{max-width:72ch;line-height:1.85}
+.footer{border-top:1px solid #dedfd9}
+@media(max-width:700px){.container,.header-inner{width:calc(100% - 32px)}.apple-hero h1{font-size:clamp(40px,11vw,60px)}.section{padding-block:64px}.button,.nav-cta,.copy-wechat{min-height:44px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
