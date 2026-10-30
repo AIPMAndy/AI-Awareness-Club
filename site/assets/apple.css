@@ -449,3 +449,170 @@ body{background:#f8f7f4;color:#17191c;font-family:-apple-system,BlinkMacSystemFo
 .footer{border-top:1px solid #dedfd9}
 @media(max-width:700px){.container,.header-inner{width:calc(100% - 32px)}.apple-hero h1{font-size:clamp(40px,11vw,60px)}.section{padding-block:64px}.button,.nav-cta,.copy-wechat{min-height:44px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+
+/* ────────────────────────────────────────────────────────────
+   AWAKE EDITORIAL / V2.0 — original, self-hosted visual system
+   Palette: warm porcelain, forest green, sage, quiet brass.
+   ──────────────────────────────────────────────────────────── */
+:root,html[data-theme="light"]{
+  --page:#f8f7f2;--surface:#fffefa;--surface2:#f0f2eb;
+  --ink:#192c26;--muted:#67756d;--stroke:#dae1d8;
+  --accent:#315f52;--accent-dark:#315f52;
+  --white:#fffefa;--hero:#f8f7f2;--hero2:#edf2e9;
+  --display:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif
+}
+html{scroll-padding-top:88px}
+body{background:var(--page);color:var(--ink);font-size:16px;letter-spacing:-.012em;line-height:1.78}
+h1,h2,h3{letter-spacing:-.06em}
+p{line-height:1.82}
+::selection{background:#bdd4c0;color:#143e32}
+:where(a,button,input,select,summary):focus-visible{outline:3px solid #5c9678;outline-offset:4px}
+.container{width:min(1160px,calc(100% - 80px))}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(248,247,242,.87);border-bottom:1px solid rgba(40,72,56,.12);backdrop-filter:blur(22px) saturate(150%);-webkit-backdrop-filter:blur(22px) saturate(150%)}
+.header-inner{height:76px;width:min(1180px,calc(100% - 80px));max-width:none}
+.logo{font-size:16px;letter-spacing:-.045em;color:#19372c;gap:12px}
+.logo small{font-size:9px;letter-spacing:.16em;color:#7c8a7e}
+.logo-mark{width:38px;height:38px;border-radius:13px;transform:none;background:#234d3d;color:#fff;font-size:29px;border:0;box-shadow:0 7px 20px rgba(19,64,45,.15)}
+.main-nav{gap:32px}
+.main-nav a{font-size:13px;color:#38564a;opacity:1;font-weight:540}
+.main-nav a:hover,.main-nav a:focus-visible{color:#0b281d}
+.header-actions{gap:13px}
+.icon-button{border:1px solid #dce3d9;background:#ffffff80;width:40px;height:40px;font-size:17px;color:#274d3d}
+.nav-cta{border-radius:99px;padding:12px 22px;background:#214d3d;color:#fff;font-weight:650;box-shadow:0 6px 17px rgba(28,76,56,.11)}
+.nav-cta:hover{background:#143f30;color:white;transform:translateY(-1px)}
+.mobile-nav{background:var(--page)}
+/* Asymmetric studio-cover hero. The art is original SVG, not a stock photo. */
+.apple-hero{position:relative;display:grid;grid-template-columns:minmax(0,52%) minmax(0,48%);align-items:center;min-height:690px;overflow:hidden;background:radial-gradient(circle at 75% 43%,#edf3e9 0,#f8f7f2 43%,#f8f7f2 100%)!important;color:#192c26!important}
+.apple-hero::before{content:"";position:absolute;inset:0;opacity:.34;pointer-events:none;background-image:radial-gradient(#bfc9bb 0.6px,transparent .6px);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent 0%,#000 75%)}
+.apple-hero .hero-content{position:relative;z-index:2;grid-column:1;grid-row:1;width:auto;max-width:none;margin:0;padding:90px 20px 72px max(40px,calc((100vw - 1160px)/2));text-align:left}
+.apple-hero .hero-kicker{justify-content:flex-start;gap:12px;color:#476d56;font-size:11px;letter-spacing:.16em;font-weight:750;margin-bottom:34px}
+.apple-hero .status-dot{width:8px;height:8px;background:#719a76;box-shadow:0 0 0 6px #e4ebdf}
+.apple-hero .kicker-number{font-size:10px;letter-spacing:.09em;color:#95a398}
+.apple-hero h1{font-size:clamp(57px,6.4vw,100px);font-weight:780;letter-spacing:-.09em;line-height:1.08;margin:0 0 28px;color:#183a2c}
+.apple-hero .fullstop{color:#79a184}
+.apple-hero .hero-statement{font-size:clamp(29px,3.05vw,44px);font-weight:650;letter-spacing:-.06em;line-height:1.4;color:#1e3026}
+.apple-hero .hero-statement span{background:none!important;color:#397a57!important;-webkit-text-fill-color:#397a57!important}
+.apple-hero .hero-description{font-size:16px;line-height:1.92;letter-spacing:-.013em;margin:22px 0 0;color:#647569;max-width:460px}
+.apple-hero .hero-buttons{justify-content:flex-start;margin:34px 0 0;gap:13px}
+.button{min-height:48px;border-radius:999px;padding:13px 24px;font-size:13px;font-weight:690;letter-spacing:-.01em;transition:transform .2s,background .2s,box-shadow .2s}
+.apple-hero .button-light,.button-dark{background:#285542!important;border-color:#285542!important;color:white!important;box-shadow:0 9px 25px rgba(33,80,57,.16)}
+.apple-hero .button-light:hover,.button-dark:hover{background:#193e2f!important;box-shadow:0 14px 33px rgba(33,80,57,.2);transform:translateY(-2px)}
+.apple-hero .button-outline{background:rgba(255,255,255,.65);border:1px solid #c6d5c7;color:#254f3d;box-shadow:none}
+.apple-hero .button-outline:hover{background:#e4ecdf}
+.apple-hero .hero-contact{justify-content:flex-start;border-top:1px solid #d9e2d8;padding:22px 0 0;margin-top:40px;color:#7d8a80;font-size:12px}
+.apple-hero .hero-contact a{color:#315f52}
+.apple-hero .hero-art{grid-column:2;grid-row:1;width:min(660px,100%);height:auto;aspect-ratio:1;margin:0 auto;align-self:center;justify-self:center;position:relative;z-index:1;pointer-events:none}
+.apple-hero .hero-art img{width:100%;height:100%;object-fit:contain;filter:none;transform:scale(1.03);transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+@media(hover:hover){.apple-hero:hover .hero-art img{transform:scale(1.06) translateY(-6px)}}
+.apple-hero .hero-bottom{grid-column:1/-1;grid-row:2;width:min(1160px,calc(100% - 80px));max-width:none;border-top:1px solid #dae2d6;padding:21px 0 23px;margin:0 auto;color:#869587;font-size:10px;letter-spacing:.15em}
+.section{padding-block:clamp(88px,9vw,132px)}
+.eyebrow,.big-number{font-size:11px;letter-spacing:.19em;color:#64806b;font-weight:740}
+.section-heading h2{color:#1c3d2c;font-size:clamp(36px,4.5vw,62px);letter-spacing:-.072em;line-height:1.22}
+.section-heading p{color:#708076;font-size:15px}
+.ethos{border-bottom:1px solid #e1e6dc}
+.ethos .section-lead{font-size:clamp(30px,4vw,58px);line-height:1.35;letter-spacing:-.075em;color:#203a2a}
+.ethos .section-lead em{color:#458163}
+.ethos-right p{font-size:16px;line-height:2;color:#55695b}
+.pillars{background:#eef1e9}
+.pillar-grid{gap:18px}
+.pillar{border:1px solid #d9e2d5;border-radius:22px;min-height:375px;background:rgba(255,255,250,.77);padding:36px 34px;transition:transform .25s,box-shadow .25s}
+.pillar:hover{transform:translateY(-5px);box-shadow:0 17px 40px rgba(29,73,50,.08)}
+.pillar-index{letter-spacing:.15em;color:#78917c}
+.pillar-glyph{font-family:Georgia,serif;color:#2b6349;font-size:74px;line-height:1.4}
+.pillar h3{font-size:36px;color:#183a2c}
+.pillar h3 small{font-size:10px;letter-spacing:.12em;color:#70816f}
+.pillar p{color:#607469;font-size:14px}
+.pathway{gap:70px}
+.pathway-left h2{font-size:clamp(38px,5vw,70px);line-height:1.2;color:#1f432f}
+.path-choice{border-color:#d9e2d9;color:#2d513b;transition:background .2s,transform .2s}
+.path-choice:hover{transform:translateX(3px)}
+.path-choice.is-active{color:#204a34}
+.path-result{border:1px solid #2e604b;background:#214a39;color:#f3f7ee;border-radius:22px;padding:30px}
+.path-result h3,.path-result p,.path-result a{color:#f7faf2}
+.path-result>span{color:#bbd5c1}
+.library-feature{background:#f9f8f3}
+.guide-grid{gap:18px}
+.guide-card{border:1px solid #dee6da;background:#fffefa;border-radius:22px;min-height:310px;padding:30px 28px;box-shadow:0 10px 25px rgba(27,64,44,.025)}
+.guide-card:nth-child(3n+2){background:#f0f4ed}
+.guide-card:hover{border-color:#a9c6ac;background:#f7faf4;box-shadow:0 23px 40px rgba(39,80,54,.085);transform:translateY(-5px)}
+.guide-card h3{font-size:24px;color:#1c3e2d}
+.guide-card p,.card-bottom{color:#677b6d}
+.circle-arrow{background:#e1eadf;color:#24503b}
+.community-panel{background:#e7eee5;border-radius:30px;padding:62px 58px}
+.community-card{border-radius:20px;border:1px solid #d0dfd0}
+.community-card.dark{background:#224a39;border-color:#224a39;color:#fff}
+.community-card.dark p,.community-card.dark a{color:#e0ebe2}
+.contact-section{background:#153b2d;color:#fff}
+.contact-section .contact-copy h2,.contact-section .contact-copy p{color:#f8f9f3}
+.contact-card{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);backdrop-filter:blur(15px);border-radius:24px}
+.contact-card a,.contact-card strong{color:#f9fbf5}
+.footer{background:#102d22!important;color:#e4eee4!important;padding:85px 0 28px;border-top:none}
+.footer-top,.footer-contact,.footer-bottom{max-width:1160px;width:calc(100% - 80px);margin-inline:auto}
+.footer-top{gap:80px;padding-bottom:65px}
+.footer-symbol{display:block;color:#a1c3a4;font-size:62px}
+.footer h2{color:#f1f7ee;font-size:clamp(35px,4.3vw,60px);line-height:1.25;letter-spacing:-.06em}
+.footer-top>div>p,.footer p{color:#acc5b4;font-size:13px}
+.footer-links b{color:#eff5e9;font-size:12px}
+.footer-links a{color:#b8cdbb;font-size:13px}
+.footer-links a:hover{color:#fff}
+.footer-contact{border:1px solid #3a5c48;background:#1c4030;border-radius:22px;padding:26px 30px}
+.footer-contact p,.wechat-identity{color:#e5efe2}
+.copy-wechat{background:#f5f7ef;color:#204833;border:0;border-radius:99px;min-height:44px}
+.footer-bottom{border-top:1px solid #365644;color:#9ebca8;margin-top:38px;padding-top:24px}
+.footer-bottom a{color:#cde0ce}
+@media(max-width:1020px){
+ .header-inner{height:68px;width:calc(100% - 42px)}
+ .container{width:calc(100% - 48px)}
+ .apple-hero{grid-template-columns:minmax(0,55%) minmax(0,45%)}
+ .apple-hero .hero-content{padding-left:32px;padding-right:0}
+ .apple-hero h1{font-size:clamp(48px,6.8vw,75px)}
+ .apple-hero .hero-bottom{width:calc(100% - 48px)}
+}
+@media(max-width:760px){
+ .container{width:calc(100% - 36px)}
+ .header-inner{height:64px;width:calc(100% - 36px);gap:8px}
+ .logo{font-size:14px}.logo-mark{width:32px;height:32px}
+ .nav-cta{padding:10px 13px;font-size:11px}
+ .apple-hero{display:flex;flex-direction:column;min-height:0;padding-top:0;background:#f8f7f2!important}
+ .apple-hero .hero-content{width:100%;padding:60px 22px 12px;margin:0}
+ .apple-hero .hero-kicker{font-size:10px;letter-spacing:.1em;margin-bottom:26px}
+ .apple-hero h1{font-size:clamp(52px,11.2vw,78px);margin-bottom:17px}
+ .apple-hero .hero-statement{font-size:clamp(25px,6vw,34px)}
+ .apple-hero .hero-description{font-size:14px;margin-top:15px;line-height:1.85}
+ .apple-hero .hero-buttons{gap:10px;margin-top:25px}
+ .apple-hero .button{font-size:12px;padding:11px 16px;min-height:45px}
+ .apple-hero .hero-contact{margin-top:25px;padding-top:16px;flex-wrap:wrap}
+ .apple-hero .hero-art{width:min(520px,100%);height:auto;aspect-ratio:1;margin:-10px auto -14px;display:block}
+ .apple-hero .hero-art img{transform:none}
+ .apple-hero .hero-bottom{width:calc(100% - 44px);padding:18px 0;font-size:9px}
+ .section{padding-block:75px}
+ .section-heading h2{font-size:clamp(34px,8vw,50px)}
+ .pillar{min-height:0;padding:27px 25px}
+ .pillar-grid,.guide-grid{grid-template-columns:1fr;gap:14px}
+ .guide-card{min-height:0;padding:26px}
+ .pathway{gap:30px}
+ .community-panel{padding:40px 20px;border-radius:22px}
+ .footer{padding:65px 0 27px}
+ .footer-top,.footer-contact,.footer-bottom{width:calc(100% - 36px)}
+ .footer-top{display:block;padding-bottom:28px}
+ .footer-links{margin-top:40px;gap:20px}
+ .footer-contact{padding:24px 20px}
+ .footer-bottom{flex-direction:column;gap:10px}
+}
+@media(max-width:380px){
+ .apple-hero h1{font-size:49px}
+ .apple-hero .hero-buttons{flex-wrap:wrap}
+ .apple-hero .hero-contact{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+html[data-theme="dark"] body{background:#131d17;color:#edf2e9}
+html[data-theme="dark"] .site-header{background:rgba(21,34,26,.9);border-color:#334b3a}
+html[data-theme="dark"] .apple-hero{background:#1c2920!important;color:#edf2e9!important}
+html[data-theme="dark"] .apple-hero h1,html[data-theme="dark"] .apple-hero .hero-statement{color:#f0f5ed}
+html[data-theme="dark"] .apple-hero .hero-description{color:#b1c3b4}
+html[data-theme="dark"] .apple-hero .hero-bottom{border-color:#3b5140}
+html[data-theme="dark"] .pillar,html[data-theme="dark"] .guide-card{background:#1e2c22;color:#f4f8f0;border-color:#3f5945}

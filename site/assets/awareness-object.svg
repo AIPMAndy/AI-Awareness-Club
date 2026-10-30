@@ -1,35 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 550" role="img" aria-labelledby="title desc">
-  <title id="title">AI Awareness Club · The Moment of Awakening</title>
-  <desc id="desc">原创抽象光学雕塑：透明玻璃环绕一颗柔和的蓝紫色光球，象征学习、觉察与共创。</desc>
-  <defs>
-    <radialGradient id="aura"><stop offset="0" stop-color="#C0B8FF" stop-opacity=".56"/><stop offset=".40" stop-color="#A8CCFF" stop-opacity=".38"/><stop offset=".67" stop-color="#D4E8FF" stop-opacity=".21"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
-    <radialGradient id="sphere" cx="33%" cy="27%" r="78%"><stop offset="0" stop-color="#fff"/><stop offset=".18" stop-color="#ecf8ff"/><stop offset=".36" stop-color="#b7d4ff"/><stop offset=".56" stop-color="#9c9bff"/><stop offset=".73" stop-color="#5968cf"/><stop offset=".88" stop-color="#242a74"/><stop offset="1" stop-color="#111833"/></radialGradient>
-    <linearGradient id="rim" x1=".07" y1=".05" x2=".93" y2=".89" gradientUnits="objectBoundingBox"><stop stop-color="#fff"/><stop offset=".18" stop-color="#d3edff"/><stop offset=".37" stop-color="#879ecb"/><stop offset=".56" stop-color="#fafaff"/><stop offset=".74" stop-color="#8b8dba"/><stop offset="1" stop-color="#fff"/></linearGradient>
-    <linearGradient id="ring" x1="100" y1="100" x2="930" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#d8f6ff" stop-opacity=".02"/><stop offset=".2" stop-color="#fff" stop-opacity=".82"/><stop offset=".44" stop-color="#cad8ff" stop-opacity=".56"/><stop offset=".6" stop-color="#fff" stop-opacity=".98"/><stop offset=".84" stop-color="#909ed9" stop-opacity=".53"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
-    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset=".35" stop-color="#bddaff" stop-opacity=".42"/><stop offset=".62" stop-color="#6274d4" stop-opacity=".17"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
-    <filter id="blur" x="-45%" y="-45%" width="190%" height="190%"><feGaussianBlur stdDeviation="42"/></filter>
-    <filter id="shadow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="15"/></filter>
-    <filter id="glassShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#667dba" flood-opacity=".15"/></filter>
-    <clipPath id="ball"><circle cx="579" cy="244" r="159"/></clipPath>
-  </defs>
-  <ellipse cx="580" cy="505" rx="248" ry="20" fill="#29375a" opacity=".11" filter="url(#shadow)"/>
-  <ellipse cx="578" cy="274" rx="368" ry="270" fill="url(#aura)" filter="url(#blur)" opacity=".85"/>
-  <!-- The transparent orbital sculpture, intentionally original, not a third-party device or logo. -->
-  <g fill="none" filter="url(#glassShadow)">
-    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="url(#rim)" stroke-width="44" opacity=".38"/>
-    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="url(#ring)" stroke-width="25" opacity=".92"/>
-    <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" stroke="#fff" stroke-width="4" opacity=".85"/>
-  </g>
-  <circle cx="579" cy="244" r="165" fill="#b3cbff" opacity=".13" filter="url(#blur)"/>
-  <circle cx="579" cy="244" r="159" fill="url(#sphere)"/>
-  <g clip-path="url(#ball)">
-    <ellipse cx="501" cy="127" rx="118" ry="54" transform="rotate(-27 501 127)" fill="#fff" opacity=".38" filter="url(#blur)"/>
-    <ellipse cx="670" cy="335" rx="125" ry="91" fill="#0e1e55" opacity=".28" filter="url(#blur)"/>
-    <path d="M383 233 C445 201 476 205 517 214 C604 233 642 183 727 203" stroke="#fff" opacity=".24" stroke-width="38" fill="none" filter="url(#blur)"/>
-    <path d="M450 345 C510 305 603 312 665 349" stroke="#e9ebff" opacity=".18" stroke-width="24" fill="none" filter="url(#blur)"/>
-  </g>
-  <circle cx="579" cy="244" r="159" stroke="url(#light)" stroke-width="2.5" fill="none"/>
-  <ellipse cx="579" cy="264" rx="369" ry="162" transform="rotate(-22 579 264)" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="600 1800" stroke-dashoffset="250" opacity=".85"/>
-  <circle cx="883" cy="161" r="6" fill="#f7faff" opacity=".95"/>
-  <circle cx="883" cy="161" r="13" stroke="#fff" opacity=".45" fill="none"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 660" role="img" aria-labelledby="title desc">
+<title id="title">AI 醒觉社 · Layers of Awareness</title><desc id="desc">Original forest-green knowledge atlas with three orbital layers representing skills, clarity and co-creation.</desc>
+<defs>
+<radialGradient id="bg"><stop stop-color="#F8FBF5"/><stop offset="1" stop-color="#E2EBDF"/></radialGradient>
+<linearGradient id="deep" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5D8F74"/><stop offset=".46" stop-color="#244C40"/><stop offset="1" stop-color="#0B2721"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9FCF4"/><stop offset="1" stop-color="#D0E6D6"/></linearGradient>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFDF5"/><stop offset="1" stop-color="#EEEDE4"/></linearGradient>
+<filter id="sh" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="28" stdDeviation="24" flood-color="#15372D" flood-opacity=".18"/></filter>
+<filter id="blur"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<circle cx="330" cy="325" r="282" fill="url(#bg)"/>
+<circle cx="330" cy="325" r="250" fill="none" stroke="#B7CFBC" stroke-width="1.5" stroke-dasharray="3 10"/>
+<circle cx="330" cy="325" r="216" fill="none" stroke="#C8DACC" stroke-width="1"/>
+<path d="M105 325H555M330 100V550" stroke="#CDDCCC" stroke-width="1" stroke-dasharray="2 9"/>
+<ellipse cx="330" cy="576" rx="204" ry="28" fill="#224B3D" opacity=".12" filter="url(#blur)"/>
+<g filter="url(#sh)">
+<circle cx="330" cy="325" r="196" fill="url(#deep)"/>
+<circle cx="330" cy="325" r="170" fill="none" stroke="#9BC0A3" stroke-opacity=".44" stroke-width="1"/>
+<circle cx="330" cy="325" r="144" fill="none" stroke="#BCD6BE" stroke-opacity=".47" stroke-width="1"/>
+<path d="M330 135C435 135 520 220 520 325" fill="none" stroke="#DDECDD" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+<path d="M140 325C140 430 225 515 330 515" fill="none" stroke="#C1DFC2" stroke-opacity=".65" stroke-width="3" stroke-linecap="round"/>
+<circle cx="330" cy="325" r="101" fill="url(#leaf)"/><circle cx="330" cy="325" r="94" fill="none" stroke="#F9FFF7" stroke-width="2"/>
+</g>
+<text x="330" y="306" text-anchor="middle" font-size="12" font-family="Arial, sans-serif" letter-spacing="4" fill="#547E65">THE ART OF</text>
+<text x="330" y="362" text-anchor="middle" font-size="48" font-family="Georgia,serif" font-weight="bold" fill="#214C3E">AI</text>
+<text x="330" y="385" text-anchor="middle" font-size="10" font-family="Arial,sans-serif" letter-spacing="3" fill="#547E65">AWAKENING</text>
+<g font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#F6F8EF" letter-spacing="2">
+<text x="326" y="175" text-anchor="middle">01 / PRACTICE</text><text x="186" y="402" transform="rotate(-55 186 402)">02 / CLARITY</text><text x="430" y="445" transform="rotate(51 430 445)">03 / TOGETHER</text>
+</g>
+<g filter="url(#sh)"><rect x="40" y="146" width="154" height="76" rx="17" fill="url(#paper)"/><rect x="452" y="408" width="165" height="86" rx="17" fill="url(#paper)"/></g>
+<g font-family="Arial, sans-serif" fill="#315F52"><text x="58" y="173" font-size="10" font-weight="700" letter-spacing="2">01 / LEARN</text><text x="58" y="197" font-size="15" font-weight="600">Build real skills</text><text x="470" y="439" font-size="10" font-weight="700" letter-spacing="2">03 / CREATE</text><text x="470" y="466" font-size="15" font-weight="600">Connect &amp; grow</text></g>
+<circle cx="493" cy="182" r="12" fill="#D7B985"/><circle cx="155" cy="471" r="7" fill="#88AA92"/>
+<g fill="#385C47" font-family="Arial,sans-serif" font-size="11" letter-spacing="2"><text x="48" y="592">OPEN KNOWLEDGE</text><text x="474" y="592">EST. 2026</text></g></svg>
