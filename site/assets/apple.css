@@ -37,7 +37,7 @@ p{line-height:1.75}
 .apple-hero{position:relative;display:flex;flex-direction:column;align-items:center;min-height:0;background:#050807!important;color:#f6f8f7!important;overflow:hidden;isolation:isolate}
 .apple-hero::before{content:"";position:absolute;width:1400px;height:670px;left:50%;bottom:-370px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at center,rgba(55,130,101,.22),rgba(20,41,31,.045) 46%,transparent 70%);pointer-events:none;z-index:0}
 .apple-hero::after,.apple-hero .hero-glow,.apple-hero .hero-orbit{display:none}
-.apple-hero .hero-content{position:relative;z-index:2;width:100%;max-width:980px;padding:73px 18px 0;text-align:center;margin:0}
+.apple-hero .hero-content{position:relative;z-index:2;width:100%;max-width:980px;padding:52px 18px 0;text-align:center;margin:0}
 .apple-hero .hero-kicker{justify-content:center;margin:0 0 22px;font-size:12px;font-weight:620;letter-spacing:.02em;color:#a4bdb0;gap:7px}
 .apple-hero .hero-kicker .status-dot,.apple-hero .kicker-number{display:none}
 .apple-hero .hero-kicker::after{content:"";display:block;width:0}
@@ -52,7 +52,7 @@ p{line-height:1.75}
 .apple-hero .button-outline{background:transparent!important;color:#8ed4ae!important;border-color:#408a66!important}
 .apple-hero .button-outline:hover{background:rgba(64,138,102,.13)!important}
 .apple-hero .hero-contact{display:none!important}
-.apple-hero .hero-art{width:min(1380px,100%);height:auto;aspect-ratio:1380/660;position:relative;z-index:1;margin:12px auto -66px;pointer-events:none;overflow:visible}
+.apple-hero .hero-art{width:min(1380px,100%);height:auto;aspect-ratio:1380/660;position:relative;z-index:1;margin:-36px auto -71px;pointer-events:none;overflow:visible}
 .apple-hero .hero-art img{display:block;width:100%;height:100%;object-fit:contain;filter:none!important;transform:none!important}
 .apple-hero .hero-art .legacy-art{display:none!important}
 .apple-hero .hero-bottom{width:min(1080px,calc(100% - 64px));max-width:none;position:relative;z-index:2;margin:0 auto;padding:18px 0 23px;color:#67756e;letter-spacing:.12em;text-transform:uppercase;font-size:10px;display:flex;justify-content:space-between}
@@ -146,9 +146,9 @@ p{line-height:1.75}
  .apple-hero h1{font-size:clamp(56px,11.4vw,75px)}
  .apple-hero .hero-statement{font-size:clamp(24px,6.2vw,33px);margin-top:11px}
  .apple-hero .hero-description{font-size:12px;margin-top:14px}
- .apple-hero .hero-buttons{gap:9px;margin-top:21px}
- .apple-hero .button{min-height:40px;padding:10px 16px;font-size:12px}
- .apple-hero .hero-art{width:640px;max-width:none;flex:none;aspect-ratio:1380/660;margin:9px 0 -30px;transform:none;overflow:visible}
+ .apple-hero .hero-buttons{flex-direction:row;gap:9px;margin-top:21px}
+ .apple-hero .button{min-height:40px;padding:10px 16px;font-size:12px;width:auto;flex:none}
+ .apple-hero .hero-art{width:640px;max-width:none;flex:none;aspect-ratio:1380/660;margin:-8px 0 -26px;transform:none;overflow:visible}
  .apple-hero .hero-art img{width:640px;height:auto}
  .apple-hero .hero-bottom{width:calc(100% - 38px);font-size:9px;padding:8px 0 18px}
  .section{padding-block:85px}
