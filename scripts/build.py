@@ -105,7 +105,7 @@ def home():
       </div>
       <div class="hero-contact"><span>主理人 Andy</span><button type="button" class="hero-wechat" data-copy-wechat="{WECHAT_ID}">微信 · {WECHAT_ID} <span aria-hidden="true">⧉</span></button><a href="{PERSONAL_SITE}" target="_blank" rel="noopener noreferrer">个人官网 <span aria-hidden="true">↗</span></a></div>
     </div>
-    <div class="hero-art" aria-hidden="true"><img class="product-screenshot" src="{url('assets/product-preview.svg')}" width="1200" height="660" alt="" fetchpriority="high"><img class="legacy-art" src="{url('assets/awareness-object.svg')}" width="1160" height="550" alt="" loading="lazy" hidden></div>
+    <div class="hero-art" aria-hidden="true"><img class="product-screenshot" src="{url('assets/hero-optical.svg')}" width="1380" height="660" alt="" fetchpriority="high"><img class="legacy-art" src="{url('assets/awareness-object.svg')}" width="1160" height="550" alt="" loading="lazy" hidden></div>
     <div class="hero-bottom"><span>Awareness is only the beginning.</span><span>OPEN · REAL · BUILD</span></div>
     </section>'''
     data+='''<section class="section ethos container"><div class="big-number">01 / WHY WE EXIST</div><div class="ethos-layout"><p class="section-lead">学习工具很容易。<br>把能力变成真实的改变，<br><em>才值得长期投入。</em></p><div class="ethos-right"><p>我们相信学习应该落到具体行动：解决一个问题，留下可以验证的结果；在认识自己和世界的过程中，找到值得一起做事的人。</p><a class="subtle-link" href="'''+url('about/')+'''">了解 AI 醒觉社的理念 <span aria-hidden="true">↗</span></a></div></div></section>'''
