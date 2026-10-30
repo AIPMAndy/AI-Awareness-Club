@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">AI 醒觉社开放学习站界面示意</title><desc id="desc">原创网页界面视觉：九条开放指南、术道圈三层成长体系及学习路线。</desc>
+<defs>
+<filter id="shadow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="27" flood-color="#000" flood-opacity=".38"/></filter>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0A0C0D" stop-opacity="0"/><stop offset="1" stop-color="#0A0C0D"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff6ee"/><stop offset="1" stop-color="#dcefe1"/></linearGradient>
+</defs>
+<g filter="url(#shadow)">
+<rect x="62" y="18" width="1076" height="608" rx="20" fill="#f5f5f7"/>
+<rect x="62" y="18" width="1076" height="49" rx="20" fill="#f7f7f9"/>
+<path d="M62 49H1138V68H62Z" fill="#f7f7f9"/>
+<path d="M62 67H1138" stroke="#dedee2"/>
+<circle cx="94" cy="43" r="6" fill="#ff6258"/><circle cx="115" cy="43" r="6" fill="#ffbf2f"/><circle cx="136" cy="43" r="6" fill="#29c840"/>
+<rect x="385" y="30" width="430" height="26" rx="9" fill="#eaeaec"/>
+<text x="600" y="47.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" fill="#66666c">aipmandy.github.io / AI-Awareness-Club</text>
+<path d="M62 68H290V626H82Q62 626 62 606Z" fill="#f2f2f4"/>
+<path d="M290 68V626" stroke="#e3e3e6"/>
+<rect x="91" y="102" width="31" height="31" rx="9" fill="#1d1d1f"/><text x="106.5" y="123" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="16" fill="white">A</text>
+<text x="135" y="122" font-family="Arial,Microsoft YaHei,sans-serif" font-size="17" font-weight="bold" fill="#222225">AI 醒觉社</text>
+<text x="92" y="180" font-family="Arial,sans-serif" font-size="10" font-weight="bold" letter-spacing="2" fill="#939398">EXPLORE</text>
+<rect x="81" y="196" width="188" height="42" rx="9" fill="#e1ece4"/>
+<circle cx="107" cy="217" r="6" fill="#3f8662"/><text x="123" y="223" font-size="14" font-family="Arial,Microsoft YaHei,sans-serif" fill="#28553e" font-weight="600">学习路线</text>
+<circle cx="107" cy="269" r="6" fill="#adb7ad"/><text x="123" y="275" font-size="14" font-family="Arial,Microsoft YaHei,sans-serif" fill="#6a6a70">开放知识库</text>
+<circle cx="107" cy="317" r="6" fill="#adb7ad"/><text x="123" y="323" font-size="14" font-family="Arial,Microsoft YaHei,sans-serif" fill="#6a6a70">成长体系</text>
+<circle cx="107" cy="365" r="6" fill="#adb7ad"/><text x="123" y="371" font-size="14" font-family="Arial,Microsoft YaHei,sans-serif" fill="#6a6a70">关于社群</text>
+<rect x="85" y="485" width="181" height="101" rx="12" fill="#fff" stroke="#e2e3e4"/>
+<text x="102" y="514" font-size="11" font-family="Arial,Microsoft YaHei,sans-serif" fill="#798079">OPEN LEARNING</text>
+<text x="102" y="542" font-size="24" font-weight="bold" font-family="Arial,sans-serif" fill="#1d1d1f">9</text>
+<text x="124" y="541" font-size="12" font-family="Arial,Microsoft YaHei,sans-serif" fill="#6f6f74">条公开指南</text>
+<text x="102" y="565" font-size="11" font-family="Arial,Microsoft YaHei,sans-serif" fill="#277151">无需登录 · 免费阅读</text>
+<rect x="290" y="68" width="848" height="558" fill="#fff"/>
+<text x="335" y="124" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#48856b">THE OPEN KNOWLEDGE PROJECT</text>
+<text x="334" y="176" font-family="Arial,Microsoft YaHei,sans-serif" font-size="32" font-weight="bold" fill="#1d1d1f">从一个真实的问题开始。</text>
+<text x="335" y="209" font-family="Arial,Microsoft YaHei,sans-serif" font-size="14" fill="#77777c">学习 AI、认识自己、找到同行者。每一条路线都可以付诸行动。</text>
+<rect x="335" y="239" width="746" height="136" rx="16" fill="url(#card)"/>
+<text x="358" y="273" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#468064">YOUR LEARNING PATH</text>
+<text x="358" y="312" font-family="Arial,Microsoft YaHei,sans-serif" font-size="25" font-weight="bold" fill="#244934">七天完成第一份 AI 作品</text>
+<text x="358" y="344" font-family="Arial,Microsoft YaHei,sans-serif" font-size="12" fill="#5b7164">从工具入门到实际交付，每一步都有成果。</text>
+<circle cx="1009" cy="308" r="33" fill="#2a704e"/><text x="1009" y="319" text-anchor="middle" font-family="Arial,sans-serif" font-size="37" fill="#fff">↗</text>
+<text x="335" y="417" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18" font-weight="bold" fill="#252529">三层成长体系</text>
+<g font-family="Arial,Microsoft YaHei,sans-serif">
+<rect x="335" y="438" width="232" height="150" rx="13" fill="#f5f5f7"/>
+<text x="354" y="471" font-size="11" fill="#929296">01 / SKILL</text><text x="354" y="515" font-size="29" font-weight="bold" fill="#242427">术</text><text x="354" y="546" font-size="13" fill="#77777a">工具 · 工作流 · 项目实践</text>
+<rect x="584" y="438" width="232" height="150" rx="13" fill="#f5f5f7"/>
+<text x="603" y="471" font-size="11" fill="#929296">02 / CLARITY</text><text x="603" y="515" font-size="29" font-weight="bold" fill="#242427">道</text><text x="603" y="546" font-size="13" fill="#77777a">认知 · 判断 · 持续成长</text>
+<rect x="833" y="438" width="248" height="150" rx="13" fill="#e9f1e9"/>
+<text x="852" y="471" font-size="11" fill="#628572">03 / COMMUNITY</text><text x="852" y="515" font-size="29" font-weight="bold" fill="#244b34">圈</text><text x="852" y="546" font-size="13" fill="#5c7d64">同行 · 连接 · 共创</text>
+</g>
+</g>
+<rect x="0" y="577" width="1200" height="83" fill="url(#fade)"/>
+</svg>
