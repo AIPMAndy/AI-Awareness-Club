@@ -181,3 +181,11 @@ html[data-theme="dark"] .apple-hero{background:#050807!important}
 html[data-theme="dark"] .pillar,html[data-theme="dark"] .guide-card{background:#26262a;color:#f5f5f7}
 html[data-theme="dark"] .pillar h3,html[data-theme="dark"] .guide-card h3,html[data-theme="dark"] .section-heading h2{color:#f5f5f7}
 html[data-theme="dark"] .pillars,html[data-theme="dark"] .library-feature{background:#202022}
+
+/* Final first-fold art direction — emphasize one statement and the illuminated object. */
+@media(min-width:761px){
+ .apple-hero .hero-kicker{display:none}
+ .apple-hero .hero-content{padding-top:69px}
+ .apple-hero .hero-description br{display:none}
+ .apple-hero .hero-art{margin:-99px auto -83px}
+}
