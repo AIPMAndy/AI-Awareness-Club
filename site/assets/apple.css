@@ -780,3 +780,12 @@ html[data-theme="dark"] .apple-hero .hero-statement{color:#f5f5f7}
  .apple-hero h1{font-size:clamp(52px,11.4vw,72px)}
  .apple-hero .hero-art{margin-top:-6px}
 }
+
+
+/* RESPONSIVE ACCESSIBILITY QA — retain theme switch on mobile */
+@media(max-width:760px){
+ .header-actions{display:flex;align-items:center;gap:7px;margin-left:auto}
+ .header-actions .icon-button.theme-toggle{display:grid!important;place-items:center;flex:none;width:29px;height:29px;border:0;background:transparent;color:#4d4d51;font-size:17px}
+ .header-actions .nav-cta{display:inline-flex;align-items:center;min-height:30px;padding:7px 11px}
+ .menu-button{margin-left:3px;flex:none}
+}
