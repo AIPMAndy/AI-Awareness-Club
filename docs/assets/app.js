@@ -97,7 +97,7 @@
     });
   }
   // Explicit user-triggered copy only; no collection or transmission.
-  $('[data-copy-wechat]').forEach(button => button.addEventListener('click', async () => {
+  $$('[data-copy-wechat]').forEach(button => button.addEventListener('click', async () => {
     const wechat = button.dataset.copyWechat || 'AIPMAndy';
     const label = button.dataset.originalLabel || button.textContent.trim();
     button.dataset.originalLabel = label;
