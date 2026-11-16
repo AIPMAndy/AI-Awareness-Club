@@ -1,0 +1,11 @@
+{
+  "title": "AI 醒觉社 · 九条免费实战指南",
+  "source_sha256": "18019da916ba908cbf353a87f2a6c46e9283c4a58e67807edf95446a209c3a05",
+  "pdf_sha256": "34a9a60679e0bb4d6bee51327962992c02ed9dbca5af28176d677d51c5c7b8a5",
+  "source_initial_date": "2026-10-29",
+  "source_files": [
+    "data/guides.json",
+    "data/faq.json"
+  ],
+  "note": "Source-driven public edition; source date is not a new verification date."
+}
