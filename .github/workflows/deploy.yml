@@ -4,7 +4,7 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -15,7 +15,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,6 +23,28 @@ jobs:
           python-version: '3.12'
       - name: Build pages
         run: python scripts/build.py
+      - name: Install PDF renderer and Chinese fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          python -m pip install -r scripts/pdf-requirements.txt
+      - name: Generate and verify public PDF
+        run: |
+          python scripts/build_pdf.py
+          python scripts/check_pdf.py
+          mkdir -p docs/pdf
+          cp pdf/ai-awareness-club-guide.pdf docs/pdf/ai-awareness-club-guide.pdf
+      - name: Archive verified PDF on main without force
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add pdf/ai-awareness-club-guide.pdf pdf/edition.json pdf/qa-report.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "docs(pdf): archive nine source-driven public guides"
+            git push origin HEAD:main
+          fi
       - name: Validate
         run: python -m unittest discover -s tests -v
       - uses: actions/configure-pages@v5
@@ -37,7 +59,7 @@ jobs:
           set -euo pipefail
           base="${{ steps.deployment.outputs.page_url }}"
           base="${base%/}/"
-          for path in "" "library/" "guides/ai-first-week/" "sitemap.xml" "llms.txt"; do
+          for path in "" "library/" "guides/ai-first-week/" "sitemap.xml" "llms.txt" "pdf/ai-awareness-club-guide.pdf"; do
             echo "Checking ${base}${path}"
             curl --fail --location --silent --show-error --retry 12 --retry-all-errors --retry-delay 5 --max-time 20 "${base}${path}" -o /tmp/ai-awareness-page
             test -s /tmp/ai-awareness-page
@@ -45,3 +67,25 @@ jobs:
               grep -q 'AI Awareness Club' /tmp/ai-awareness-page
             fi
           done
+
+      - name: Verify online PDF SHA-256 matches this build
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${{ steps.deployment.outputs.page_url }}"
+          expected="$(sha256sum pdf/ai-awareness-club-guide.pdf | awk '{print $1}')"
+          matched=0
+          for attempt in $(seq 1 12); do
+            if curl -fsSL --max-time 30 "${base%/}/pdf/ai-awareness-club-guide.pdf" -o /tmp/published-guide.pdf; then
+              actual="$(sha256sum /tmp/published-guide.pdf | awk '{print $1}')"
+              if [[ "$actual" == "$expected" ]]; then matched=1; break; fi
+            fi
+            sleep 5
+          done
+          test "$matched" -eq 1
+          echo "Online PDF SHA-256 matched: $expected"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: awareness-club-pdf-qa
+          path: pdf/qa-report.json

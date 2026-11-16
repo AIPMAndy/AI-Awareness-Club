@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
     steps:
@@ -17,6 +17,17 @@ jobs:
           python-version: '3.12'
       - name: Rebuild static site
         run: python scripts/build.py
+      - name: Install PDF renderer and Chinese fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk
+          python -m pip install -r scripts/pdf-requirements.txt
+      - name: Generate and verify full PDF
+        run: |
+          python scripts/build_pdf.py
+          python scripts/check_pdf.py
+          mkdir -p docs/pdf
+          cp pdf/ai-awareness-club-guide.pdf docs/pdf/ai-awareness-club-guide.pdf
       - name: Unit and content tests
         run: python -m unittest discover -s tests -v
       - name: Validate client JavaScript syntax
