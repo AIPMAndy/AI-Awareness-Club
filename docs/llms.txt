@@ -19,6 +19,9 @@
 - 公开知识：https://aipmandy.github.io/AI-Awareness-Club/library/
 - 品牌与边界：https://aipmandy.github.io/AI-Awareness-Club/about/
 - 常见问题：https://aipmandy.github.io/AI-Awareness-Club/faq/
+- 完整免费 PDF：https://aipmandy.github.io/AI-Awareness-Club/pdf/ai-awareness-club-guide.pdf
+- 个人服务：https://metaver.vip/services
+- 公司官网：https://www.a6no1.cn/
 
 ## 公开指南
 - [普通人学 AI：从第一天到第七天](https://aipmandy.github.io/AI-Awareness-Club/guides/ai-first-week/)：不靠囤课。把自己的真实工作变成测试材料，学会提问、核查、交付和复盘。
