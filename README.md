@@ -1,4 +1,12 @@
 <div align="center">
+
+## 免费正式 PDF · 九条公开实战指南
+
+- **[下载免费 PDF](https://aipmandy.github.io/AI-Awareness-Club/pdf/ai-awareness-club-guide.pdf)**：直接阅读，无需加入社群或留资；内容与仓库 `data/guides.json`、`data/faq.json` 同源。
+- 出版与复核：`python -m pip install -r scripts/pdf-requirements.txt && python scripts/build_pdf.py && python scripts/check_pdf.py`。CI 检查九条指南、可检索中文、链接、书签及**每页自动渲染**；人工高清逐页、iOS/Android 真机检查仍须另行签收。
+- 仅包含开源公开内容；不包括会员专属材料或客户信息。内容初稿日期 2026-10-29，PDF 自动重建不代表动态规则已于构建当天核验。
+- 主理人微信 `AIPMAndy` · [个人官网](https://metaver.vip/) · [个人服务](https://metaver.vip/services) · [星觉科技公司官网](https://www.a6no1.cn/)。
+
   <img src="site/assets/readme-hero.svg" width="100%" alt="AI醒觉社 AI Awareness Club：让 AI 成为利人利己的力量，免费公开、真实实践、价值共创" />
 
 # AI醒觉社 · AI Awareness Club
